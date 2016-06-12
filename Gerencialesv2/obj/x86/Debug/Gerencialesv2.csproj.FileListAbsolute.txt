@@ -1,0 +1,33 @@
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.Filtro1.resources
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.formularios.confirmETL.resources
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.formularios.mtUser.resources
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.frmLogin.resources
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.frmPrincipal.resources
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.Properties.Resources.resources
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csproj.GenerateResource.Cache
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe.config
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
+c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
+C:\Users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csprojResolveAssemblyReference.cache
+C:\Users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosAdmin.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe.config
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroCostoBeneficio.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresoNeto.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostoBeneficio.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresoNeto.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastosAdmin.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.formularios.confirmETL.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.formularios.mtUser.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.frmLogin.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.frmPrincipal.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.Properties.Resources.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosAdmin.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
