@@ -68,9 +68,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(95, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 20);
+            this.label1.Size = new System.Drawing.Size(156, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Usuarios por Unidades";
+            this.label1.Text = "Usuarios por Viaje";
             // 
             // label2
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
             this.Name = "FiltroUsuarioViaje";
-            this.Text = "Usuarios por Unidades";
+            this.Text = "Usuarios por Viaje";
             this.Load += new System.EventHandler(this.FiltroGastosAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

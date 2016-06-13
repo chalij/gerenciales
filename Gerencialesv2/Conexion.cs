@@ -183,6 +183,108 @@ namespace Gerencialesv2
                 //Se muestra vista
                 f1.Show();
             }
+            if (Convert.ToInt32(ItemClick.Name) == 25)
+            {
+                principal.Hide();
+                login.Show();
+            }
+
+            if (Convert.ToInt32(ItemClick.Name) == 28)
+            {
+                filtros.FiltroIngresosViajes f1 = new filtros.FiltroIngresosViajes();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 29)
+            {
+                filtros.FiltroGastoViajesSF f1 = new filtros.FiltroGastoViajesSF();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 30)
+            {
+                filtros.FiltroUsuarioUnidades f1 = new filtros.FiltroUsuarioUnidades();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 31)
+            {
+                filtros.FiltroUsuarioViaje f1 = new filtros.FiltroUsuarioViaje();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 32)
+            {
+                filtros.FiltroGastosCombustible f1 = new filtros.FiltroGastosCombustible();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 33)
+            {
+                filtros.FiltroComparativoIngresos f1 = new filtros.FiltroComparativoIngresos();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+
+            if (Convert.ToInt32(ItemClick.Name) == 34)
+            {
+                principal.Hide();
+                login.Show();
+            }
+
+            if (Convert.ToInt32(ItemClick.Name) == 36)
+            {
+                filtros.FiltroGastosAdmin f1 = new filtros.FiltroGastosAdmin();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 37)
+            {
+                filtros.FiltroIngresoNeto f1 = new filtros.FiltroIngresoNeto();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 38)
+            {
+                filtros.FiltroCostoBeneficio f1 = new filtros.FiltroCostoBeneficio();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 39)
+            {
+                filtros.FiltroGastoViajes f1 = new filtros.FiltroGastoViajes();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 40)
+            {
+                filtros.FiltroIngresosViajesMes f1 = new filtros.FiltroIngresosViajesMes();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+
             if (Convert.ToInt32(ItemClick.Name) == 16)
             {
                 principal.Hide();
