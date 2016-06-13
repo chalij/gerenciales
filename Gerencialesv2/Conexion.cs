@@ -175,6 +175,14 @@ namespace Gerencialesv2
                 //Se muestra vista
                 f1.Show();
             }
+            if (Convert.ToInt32(ItemClick.Name) == 22)
+            {
+                filtros.FiltroComparativoIngresos f1 = new filtros.FiltroComparativoIngresos();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
             if (Convert.ToInt32(ItemClick.Name) == 16)
             {
                 principal.Hide();
@@ -492,7 +500,8 @@ namespace Gerencialesv2
 
                 DbConnectionG.Close();
                 DbConnectionT.Close();
-                MessageBox.Show("Datos Cargados", "Completado");
+                label1.Text = "Datos Correctamente Cargados..";
+              //  MessageBox.Show("Datos Cargados", "Completado");
 
             }
             catch (Exception e)

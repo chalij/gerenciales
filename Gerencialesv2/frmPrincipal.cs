@@ -158,10 +158,10 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT6(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        public void crearRT6(DateTime fechaini, DateTime fechafin, reportes.frmComparativoIngresos rpt)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
-            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            reportes.compartivoIngresoUsuario ca = new reportes.compartivoIngresoUsuario();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);

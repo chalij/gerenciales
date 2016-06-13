@@ -43,3 +43,5 @@ C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResourc
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastosCombustible.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroComparativoIngresos.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmComparativoIngresos.resources
