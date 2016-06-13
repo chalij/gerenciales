@@ -48,7 +48,7 @@
             // 
             // fechaIni
             // 
-            this.fechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaIni.Location = new System.Drawing.Point(49, 64);
             this.fechaIni.Name = "fechaIni";
             this.fechaIni.Size = new System.Drawing.Size(107, 20);
@@ -56,7 +56,7 @@
             // 
             // fechaFin
             // 
-            this.fechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaFin.Location = new System.Drawing.Point(204, 64);
             this.fechaFin.Name = "fechaFin";
             this.fechaFin.Size = new System.Drawing.Size(119, 20);

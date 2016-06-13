@@ -70,6 +70,12 @@
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="filtros\FiltroGastoViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filtros\FiltroGastoViajes.Designer.cs">
+      <DependentUpon>FiltroGastoViajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="filtros\FiltroCostoBeneficio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,18 @@
     </Compile>
     <Compile Include="filtros\FiltroIngresoNeto.Designer.cs">
       <DependentUpon>FiltroIngresoNeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmGastosTotalesViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmGastosTotalesViajes.Designer.cs">
+      <DependentUpon>frmGastosTotalesViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\gastosTotalesViajes.cs">
+      <DependentUpon>gastosTotalesViajes.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="reportes\frmcostoBeneficio.cs">
       <SubType>Form</SubType>
@@ -150,11 +168,21 @@
     <Compile Include="reportes\frmcostosAdmin.Designer.cs">
       <DependentUpon>frmcostosAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="filtros\FiltroGastoViajes.resx">
+      <DependentUpon>FiltroGastoViajes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroCostoBeneficio.resx">
       <DependentUpon>FiltroCostoBeneficio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroIngresoNeto.resx">
       <DependentUpon>FiltroIngresoNeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmGastosTotalesViajes.resx">
+      <DependentUpon>frmGastosTotalesViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\gastosTotalesViajes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>gastosTotalesViajes.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reportes\frmcostoBeneficio.resx">
       <DependentUpon>frmcostoBeneficio.cs</DependentUpon>

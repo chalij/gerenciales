@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace Gerencialesv2.filtros
 {
-    public partial class FiltroGastosAdmin: Form
+    public partial class FiltroGastoViajes: Form
     {
         public frmPrincipal principal;
-        public FiltroGastosAdmin()
+        public FiltroGastoViajes()
         {
             InitializeComponent();
             fechaIni.CustomFormat = "yyyy-MM-dd";
@@ -24,16 +24,11 @@ namespace Gerencialesv2.filtros
             if (fechaIni.Value < fechaFin.Value)
             {
                 this.Hide();
-                reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
-                principal.crearR1(Convert.ToDateTime(fechaIni.Text), Convert.ToDateTime(fechaFin.Text), rpt);
+                reportes.frmGastosTotalesViajes rpt = new reportes.frmGastosTotalesViajes();
+                principal.crearR4(Convert.ToDateTime(fechaIni.Text), Convert.ToDateTime(fechaFin.Text), rpt);
             }
             else
                 MessageBox.Show("Fecha Inicio es Mayo a Fecha Final","Error");
-        }
-
-        private void FiltroIngresoNeto_Load(object sender, EventArgs e)
-        {
-
         }
 
     }

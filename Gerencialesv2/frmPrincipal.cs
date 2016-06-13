@@ -49,6 +49,7 @@ namespace Gerencialesv2
             rpt.crystalReportViewer1.ReportSource=ca;
            // rpt.Parent = this;
            // this.Hide();
+            rpt.Refresh();
             rpt.Show();
         }
         public void crearR2(DateTime fechaini, DateTime fechafin, reportes.frmIngresoNeto rpt)
@@ -61,12 +62,24 @@ namespace Gerencialesv2
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
-            rpt.Show();
+            rpt.ShowDialog();
         }
         public void crearR3(DateTime fechaini, DateTime fechafin, reportes.frmcostoBeneficio rpt)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.costoBeneficio ca = new reportes.costoBeneficio();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
+        public void crearR4(DateTime fechaini, DateTime fechafin, reportes.frmGastosTotalesViajes rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.gastosTotalesViajes ca = new reportes.gastosTotalesViajes();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);

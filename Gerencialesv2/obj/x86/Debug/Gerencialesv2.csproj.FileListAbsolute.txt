@@ -16,8 +16,10 @@ C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe.c
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroCostoBeneficio.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresoNeto.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmGastosTotalesViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostoBeneficio.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresoNeto.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastosAdmin.resources

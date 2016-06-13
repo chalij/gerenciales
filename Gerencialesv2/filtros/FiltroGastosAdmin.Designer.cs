@@ -48,7 +48,7 @@
             // 
             // fechaIni
             // 
-            this.fechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaIni.Location = new System.Drawing.Point(49, 64);
             this.fechaIni.Name = "fechaIni";
             this.fechaIni.Size = new System.Drawing.Size(107, 20);
@@ -56,7 +56,7 @@
             // 
             // fechaFin
             // 
-            this.fechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.fechaFin.Location = new System.Drawing.Point(204, 64);
             this.fechaFin.Name = "fechaFin";
             this.fechaFin.Size = new System.Drawing.Size(119, 20);
@@ -90,7 +90,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Hasta";
             // 
-            // FiltroIngresoNeto
+            // FiltroGastosAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,7 +101,7 @@
             this.Controls.Add(this.fechaFin);
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
-            this.Name = "FiltroIngresoNeto";
+            this.Name = "FiltroGastosAdmin";
             this.Text = "Gastos Administratitivos Totales";
             this.Load += new System.EventHandler(this.FiltroIngresoNeto_Load);
             this.ResumeLayout(false);

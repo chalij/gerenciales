@@ -15,6 +15,8 @@ namespace Gerencialesv2.filtros
         public FiltroIngresoNeto()
         {
             InitializeComponent();
+            fechaIni.CustomFormat = "yyyy-MM-dd";
+            fechaFin.CustomFormat = "yyyy-MM-dd";
         }
 
         private void button1_Click(object sender, EventArgs e)
