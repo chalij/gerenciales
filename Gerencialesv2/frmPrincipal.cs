@@ -88,6 +88,18 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
+        public void crearR5(DateTime fechaini, DateTime fechafin, reportes.frmGastosTotalesViajes rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.gastosTotalesViajes ca = new reportes.gastosTotalesViajes();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
         public void crearRT1(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
@@ -104,6 +116,54 @@ namespace Gerencialesv2
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.gastosTotalesViajesSF ca = new reportes.gastosTotalesViajesSF();
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
+        public void crearRT3(DateTime fechaini, DateTime fechafin, reportes.frmUsuarioUnidad rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.usuarioUnidad ca = new reportes.usuarioUnidad();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
+        public void crearRT4(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
+        public void crearRT5(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
+        public void crearRT6(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;

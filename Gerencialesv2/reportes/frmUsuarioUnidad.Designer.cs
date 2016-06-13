@@ -1,6 +1,6 @@
 ﻿namespace Gerencialesv2.reportes
 {
-    partial class frmIngresoNeto
+    partial class frmUsuarioUnidad
     {
         /// <summary>
         /// Required designer variable.
@@ -67,13 +67,13 @@
             // 
             this.movimiento_diarioTableAdapter.ClearBeforeFill = true;
             // 
-            // frmIngresoNeto
+            // frmUsuarioUnidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 610);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "frmIngresoNeto";
+            this.Name = "frmUsuarioUnidad";
             this.Text = "frmIngresoNeto";
             this.Load += new System.EventHandler(this.frmIngresoNeto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDGerencialDataSet2)).EndInit();
