@@ -385,8 +385,8 @@ namespace Gerencialesv2
                     }
                 }
                 //select * from selectMD() as f(iddiario integer,fechai date,equipofk integer,minicio numeric(10,0),mfinal numeric(10,0),nviajes numeric(5,0),conductorfk integer,pasajea double precision,ineto double precision,ibruto double precision,gastosT double precision,gastosComb double precision,gastosAdmin double precision,gastosOtros double precision,gastosAhorro  double precision);
-                
-                String etlMdiario = "select * from selectMD() as f(iddiario integer,fechai text,equipofk integer,minicio numeric(10,0),mfinal numeric(10,0),nviajes numeric(5,0),conductorfk integer,pasajea double precision,ineto double precision,ibruto double precision,gastosT double precision,gastosComb double precision,gastosAdmin double precision,gastosOtros double precision,gastosAhorro  double precision);";
+
+                String etlMdiario = "select * from selectMD() as f(iddiario integer,fechai text,equipofk integer,minicio numeric(10,0),mfinal numeric(10,0),nviajes numeric(5,0),conductorfk integer,pasajea double precision,ineto double precision,ibruto double precision,gastosT double precision,gastosComb double precision,gastosAdmin double precision,gastosOtros double precision,gastosAhorro  double precision,dayi  double precision,monthi  double precision,yeari  double precision);";
                 OdbcCommand CommandTMdiario = DbConnectionT.CreateCommand();
                 CommandTMdiario.CommandText = etlMdiario;
                 DbReaderT = CommandTMdiario.ExecuteReader();
@@ -414,7 +414,7 @@ namespace Gerencialesv2
                           //  MessageBox.Show(DbReaderT[7] + "", "esto");
                             OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
                            // MessageBox.Show("INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderG3[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderG4[0] + "','" + DbReaderT[7] + "','" + DbReaderT[8] + "','" + DbReaderT[9] + "','" + DbReaderT[10] + "','" + DbReaderT[11] + "','" + DbReaderT[12] + "','" + DbReaderT[13] + "','" + DbReaderT[14] + "');", "Completado");
-                            CommandGprop.CommandText = "INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderG3[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderG4[0] + "'," + DbReaderT[7]  + "," + DbReaderT[8] + "," + DbReaderT[9] + "," + DbReaderT[10] + "," + DbReaderT[11] + "," + DbReaderT[12] + "," + DbReaderT[13] + "," + DbReaderT[14] + ");";
+                            CommandGprop.CommandText = "INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro,dia,mes,yeari)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderG3[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderG4[0] + "'," + DbReaderT[7] + "," + DbReaderT[8] + "," + DbReaderT[9] + "," + DbReaderT[10] + "," + DbReaderT[11] + "," + DbReaderT[12] + "," + DbReaderT[13] + "," + DbReaderT[14] + ",'" + DbReaderT[15] + "','" + DbReaderT[16] + "','" + DbReaderT[17] + "');";
                             CommandGprop.ExecuteReader();
 
 
