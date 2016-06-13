@@ -16,12 +16,15 @@ C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe.c
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroUsuarioViaje.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroUsuarioUnidades.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajesSF.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresosViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroCostoBeneficio.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresoNeto.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosCombustible.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmUsuarioViaje.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmUsuarioUnidad.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmGastosTotalesViajesSF.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresosTotalesViajes.resources
@@ -39,3 +42,4 @@ C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResourc
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastosCombustible.resources

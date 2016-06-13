@@ -1,6 +1,6 @@
 ﻿namespace Gerencialesv2.reportes
 {
-    partial class frmGastosTotalesViajes
+    partial class frmcostosCombustible
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.gastosTotalesViajes1 = new Gerencialesv2.reportes.gastosTotalesViajes();
+            this.costosCombustible1 = new Gerencialesv2.reportes.costosCombustible();
             this.costosAdmin1 = new Gerencialesv2.reportes.costosAdmin();
             this.SuspendLayout();
             // 
@@ -41,18 +41,19 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.gastosTotalesViajes1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1068, 542);
+            this.crystalReportViewer1.ReportSource = this.costosCombustible1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1023, 514);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // frmGastosTotalesViajes
+            // frmcostosCombustible
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 542);
+            this.ClientSize = new System.Drawing.Size(1023, 514);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "frmGastosTotalesViajes";
-            this.Text = "Costos por Viaje";
+            this.Name = "frmcostosCombustible";
+            this.Text = "Costos de Combustible";
+            this.Load += new System.EventHandler(this.frmcostosAdmin_Load);
             this.ResumeLayout(false);
 
         }
@@ -61,7 +62,7 @@
 
         public CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private costosAdmin costosAdmin1;
-        private gastosTotalesViajes gastosTotalesViajes1;
+        private costosCombustible costosCombustible1;
 
     }
 }

@@ -70,6 +70,18 @@
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="filtros\FiltroGastosCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filtros\FiltroGastosCombustible.Designer.cs">
+      <DependentUpon>FiltroGastosCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtros\FiltroUsuarioViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filtros\FiltroUsuarioViaje.Designer.cs">
+      <DependentUpon>FiltroUsuarioViaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="filtros\FiltroUsuarioUnidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,30 @@
     </Compile>
     <Compile Include="filtros\FiltroIngresoNeto.Designer.cs">
       <DependentUpon>FiltroIngresoNeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmcostosCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmcostosCombustible.Designer.cs">
+      <DependentUpon>frmcostosCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\costosCombustible.cs">
+      <DependentUpon>costosCombustible.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="reportes\frmUsuarioViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmUsuarioViaje.Designer.cs">
+      <DependentUpon>frmUsuarioViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\usuarioViaje.cs">
+      <DependentUpon>usuarioViaje.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="reportes\frmUsuarioUnidad.cs">
       <SubType>Form</SubType>
@@ -222,6 +258,12 @@
     <Compile Include="reportes\frmcostosAdmin.Designer.cs">
       <DependentUpon>frmcostosAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="filtros\FiltroGastosCombustible.resx">
+      <DependentUpon>FiltroGastosCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtros\FiltroUsuarioViaje.resx">
+      <DependentUpon>FiltroUsuarioViaje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroUsuarioUnidades.resx">
       <DependentUpon>FiltroUsuarioUnidades.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +281,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroIngresoNeto.resx">
       <DependentUpon>FiltroIngresoNeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmcostosCombustible.resx">
+      <DependentUpon>frmcostosCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\costosCombustible.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>costosCombustible.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmUsuarioViaje.resx">
+      <DependentUpon>frmUsuarioViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\usuarioViaje.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>usuarioViaje.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reportes\frmUsuarioUnidad.resx">
       <DependentUpon>frmUsuarioUnidad.cs</DependentUpon>

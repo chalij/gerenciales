@@ -94,7 +94,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar1);
             this.Name = "confirmETL";
-            this.Text = "confirmETL";
+            this.Text = "Proceso ETL";
             this.ResumeLayout(false);
             this.PerformLayout();
 

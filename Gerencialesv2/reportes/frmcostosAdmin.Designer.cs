@@ -41,17 +41,17 @@
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.costosAdmin1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(677, 239);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1120, 529);
             this.crystalReportViewer1.TabIndex = 0;
             // 
             // frmcostosAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 239);
+            this.ClientSize = new System.Drawing.Size(1120, 529);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frmcostosAdmin";
-            this.Text = "frmcostosAdmin";
+            this.Text = "Gastos Administrativos Totales";
             this.ResumeLayout(false);
 
         }

@@ -74,7 +74,7 @@
             this.ClientSize = new System.Drawing.Size(1124, 610);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frmIngresoNeto";
-            this.Text = "frmIngresoNeto";
+            this.Text = "Ingreso Neto";
             this.Load += new System.EventHandler(this.frmIngresoNeto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDGerencialDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movimientodiarioBindingSource)).EndInit();

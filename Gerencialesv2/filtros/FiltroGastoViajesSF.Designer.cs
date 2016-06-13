@@ -60,7 +60,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "FiltroGastoViajesSF";
-            this.Text = "Gastos Administratitivos Totales";
+            this.Text = "Gastos Totales por Viajes sin Filtro";
             this.ResumeLayout(false);
             this.PerformLayout();
 

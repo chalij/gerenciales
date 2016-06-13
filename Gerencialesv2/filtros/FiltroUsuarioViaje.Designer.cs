@@ -1,6 +1,6 @@
 ﻿namespace Gerencialesv2.filtros
 {
-    partial class FiltroCostoBeneficio
+    partial class FiltroUsuarioViaje
     {
         /// <summary>
         /// Required designer variable.
@@ -66,11 +66,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(114, 24);
+            this.label1.Location = new System.Drawing.Point(95, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 20);
+            this.label1.Size = new System.Drawing.Size(192, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Costo Beneficio";
+            this.label1.Text = "Usuarios por Unidades";
             // 
             // label2
             // 
@@ -90,7 +90,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Hasta";
             // 
-            // FiltroCostoBeneficio
+            // FiltroUsuarioViaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,8 +101,9 @@
             this.Controls.Add(this.fechaFin);
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
-            this.Name = "FiltroCostoBeneficio";
-            this.Text = "Costo Beneficio";
+            this.Name = "FiltroUsuarioViaje";
+            this.Text = "Usuarios por Unidades";
+            this.Load += new System.EventHandler(this.FiltroGastosAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

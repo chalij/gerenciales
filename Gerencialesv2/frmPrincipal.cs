@@ -134,10 +134,10 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT4(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        public void crearRT4(DateTime fechaini, DateTime fechafin, reportes.frmUsuarioViaje rpt)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
-            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            reportes.usuarioViaje ca = new reportes.usuarioViaje();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
@@ -146,10 +146,10 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT5(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        public void crearRT5(DateTime fechaini, DateTime fechafin, reportes.frmcostosCombustible rpt)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
-            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            reportes.costosCombustible ca = new reportes.costosCombustible();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
@@ -169,6 +169,11 @@ namespace Gerencialesv2
             // rpt.Parent = this;
             // this.Hide();
             rpt.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

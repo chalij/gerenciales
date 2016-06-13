@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.costosAdmin1 = new Gerencialesv2.reportes.costosAdmin();
             this.gastosTotalesViajesSF1 = new Gerencialesv2.reportes.gastosTotalesViajesSF();
+            this.costosAdmin1 = new Gerencialesv2.reportes.costosAdmin();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -52,7 +52,7 @@
             this.ClientSize = new System.Drawing.Size(1025, 499);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "frmGastosTotalesViajesSF";
-            this.Text = "frmcostosAdmin";
+            this.Text = "Costos por Viaje sin Filtro";
             this.Load += new System.EventHandler(this.frmGastosTotalesViajes_Load);
             this.ResumeLayout(false);
 

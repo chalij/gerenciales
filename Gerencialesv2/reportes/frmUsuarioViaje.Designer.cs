@@ -1,6 +1,6 @@
 ﻿namespace Gerencialesv2.reportes
 {
-    partial class frmUsuarioUnidad
+    partial class frmUsuarioViaje
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.usuarioViaje1 = new Gerencialesv2.reportes.usuarioViaje();
             this.ingresoNeto1 = new Gerencialesv2.reportes.ingresoNeto();
             this.bDGerencialDataSet2 = new Gerencialesv2.BDGerencialDataSet2();
             this.movimientodiarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -47,7 +48,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.ingresoNeto1;
+            this.crystalReportViewer1.ReportSource = this.usuarioViaje1;
             this.crystalReportViewer1.ReuseParameterValuesOnRefresh = true;
             this.crystalReportViewer1.Size = new System.Drawing.Size(1124, 610);
             this.crystalReportViewer1.TabIndex = 0;
@@ -67,14 +68,14 @@
             // 
             this.movimiento_diarioTableAdapter.ClearBeforeFill = true;
             // 
-            // frmUsuarioUnidad
+            // frmUsuarioViaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 610);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "frmUsuarioUnidad";
-            this.Text = "Usuarios por Unidad";
+            this.Name = "frmUsuarioViaje";
+            this.Text = "Usuarios por Viaje";
             this.Load += new System.EventHandler(this.frmIngresoNeto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bDGerencialDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movimientodiarioBindingSource)).EndInit();
@@ -89,5 +90,6 @@
         private BDGerencialDataSet2 bDGerencialDataSet2;
         private System.Windows.Forms.BindingSource movimientodiarioBindingSource;
         private BDGerencialDataSet2TableAdapters.movimiento_diarioTableAdapter movimiento_diarioTableAdapter;
+        private usuarioViaje usuarioViaje1;
     }
 }
