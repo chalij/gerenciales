@@ -124,7 +124,6 @@
             this.tableAdapterManager.gastoTableAdapter = null;
             this.tableAdapterManager.lista_gastoTableAdapter = null;
             this.tableAdapterManager.menuTableAdapter = null;
-            this.tableAdapterManager.movimiento_diarioTableAdapter = null;
             this.tableAdapterManager.propietarioTableAdapter = null;
             this.tableAdapterManager.rolTableAdapter = null;
             this.tableAdapterManager.temporalTableAdapter = null;

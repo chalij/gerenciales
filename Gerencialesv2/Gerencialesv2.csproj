@@ -70,6 +70,12 @@
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="filtros\FiltroIngresosViajesMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filtros\FiltroIngresosViajesMes.Designer.cs">
+      <DependentUpon>FiltroIngresosViajesMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="filtros\FiltroComparativoIngresos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,18 @@
     </Compile>
     <Compile Include="reportes\compartivoIngresoUsuario.cs">
       <DependentUpon>compartivoIngresoUsuario.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="reportes\frmIngresosTotalesViajesMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmIngresosTotalesViajesMes.Designer.cs">
+      <DependentUpon>frmIngresosTotalesViajesMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\ingresoTotalesViajesMes.cs">
+      <DependentUpon>ingresoTotalesViajesMes.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
@@ -276,6 +294,9 @@
     <Compile Include="reportes\frmcostosAdmin.Designer.cs">
       <DependentUpon>frmcostosAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="filtros\FiltroIngresosViajesMes.resx">
+      <DependentUpon>FiltroIngresosViajesMes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroComparativoIngresos.resx">
       <DependentUpon>FiltroComparativoIngresos.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +327,13 @@
     <EmbeddedResource Include="reportes\compartivoIngresoUsuario.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>compartivoIngresoUsuario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmIngresosTotalesViajesMes.resx">
+      <DependentUpon>frmIngresosTotalesViajesMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\ingresoTotalesViajesMes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ingresoTotalesViajesMes.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reportes\frmComparativoIngresos.resx">
       <DependentUpon>frmComparativoIngresos.cs</DependentUpon>

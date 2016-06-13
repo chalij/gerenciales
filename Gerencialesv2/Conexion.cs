@@ -129,7 +129,7 @@ namespace Gerencialesv2
             }
             if (Convert.ToInt32(ItemClick.Name) == 10)
             {
-                filtros.FiltroGastoViajes f1 = new filtros.FiltroGastoViajes();
+                filtros.FiltroIngresosViajesMes f1 = new filtros.FiltroIngresosViajesMes();
                 f1.principal = principal;
                 f1.MdiParent = principal;
                 //Se muestra vista

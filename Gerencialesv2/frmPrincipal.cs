@@ -88,10 +88,10 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearR5(DateTime fechaini, DateTime fechafin, reportes.frmGastosTotalesViajes rpt)
+        public void crearR5(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajesMes rpt)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
-            reportes.gastosTotalesViajes ca = new reportes.gastosTotalesViajes();
+            reportes.ingresoTotalesViajesMes ca = new reportes.ingresoTotalesViajesMes();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);

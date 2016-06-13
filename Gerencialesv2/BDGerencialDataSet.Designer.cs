@@ -2492,6 +2492,12 @@ namespace Gerencialesv2 {
             
             private global::System.Data.DataColumn columnahorro;
             
+            private global::System.Data.DataColumn columndia;
+            
+            private global::System.Data.DataColumn columnmes;
+            
+            private global::System.Data.DataColumn columnyeari;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public movimiento_diarioDataTable() {
@@ -2647,6 +2653,30 @@ namespace Gerencialesv2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn diaColumn {
+                get {
+                    return this.columndia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn mesColumn {
+                get {
+                    return this.columnmes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn yeariColumn {
+                get {
+                    return this.columnyeari;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2682,7 +2712,24 @@ namespace Gerencialesv2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public movimiento_diarioRow Addmovimiento_diarioRow(System.DateTime fecha_ingreso, int id_equipo, decimal maquina_inicio, decimal maquina_final, decimal numro_viajes, int id_conductor, double pasaje_actual, double ingreso_neto, double ingreso_bruto, double gastos_totales, double gastos_combutible, double gastos_administrativos, double otros_gastos, double ahorro) {
+            public movimiento_diarioRow Addmovimiento_diarioRow(
+                        System.DateTime fecha_ingreso, 
+                        int id_equipo, 
+                        decimal maquina_inicio, 
+                        decimal maquina_final, 
+                        decimal numro_viajes, 
+                        int id_conductor, 
+                        double pasaje_actual, 
+                        double ingreso_neto, 
+                        double ingreso_bruto, 
+                        double gastos_totales, 
+                        double gastos_combutible, 
+                        double gastos_administrativos, 
+                        double otros_gastos, 
+                        double ahorro, 
+                        int dia, 
+                        int mes, 
+                        int yeari) {
                 movimiento_diarioRow rowmovimiento_diarioRow = ((movimiento_diarioRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2699,7 +2746,10 @@ namespace Gerencialesv2 {
                         gastos_combutible,
                         gastos_administrativos,
                         otros_gastos,
-                        ahorro};
+                        ahorro,
+                        dia,
+                        mes,
+                        yeari};
                 rowmovimiento_diarioRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowmovimiento_diarioRow);
                 return rowmovimiento_diarioRow;
@@ -2744,6 +2794,9 @@ namespace Gerencialesv2 {
                 this.columngastos_administrativos = base.Columns["gastos_administrativos"];
                 this.columnotros_gastos = base.Columns["otros_gastos"];
                 this.columnahorro = base.Columns["ahorro"];
+                this.columndia = base.Columns["dia"];
+                this.columnmes = base.Columns["mes"];
+                this.columnyeari = base.Columns["yeari"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2779,6 +2832,12 @@ namespace Gerencialesv2 {
                 base.Columns.Add(this.columnotros_gastos);
                 this.columnahorro = new global::System.Data.DataColumn("ahorro", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnahorro);
+                this.columndia = new global::System.Data.DataColumn("dia", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndia);
+                this.columnmes = new global::System.Data.DataColumn("mes", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmes);
+                this.columnyeari = new global::System.Data.DataColumn("yeari", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnyeari);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_movimiento_diario}, true));
                 this.columnid_movimiento_diario.AutoIncrement = true;
@@ -4878,6 +4937,54 @@ namespace Gerencialesv2 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int dia {
+                get {
+                    try {
+                        return ((int)(this[this.tablemovimiento_diario.diaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'dia\' de la tabla \'movimiento_diario\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemovimiento_diario.diaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int mes {
+                get {
+                    try {
+                        return ((int)(this[this.tablemovimiento_diario.mesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'mes\' de la tabla \'movimiento_diario\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemovimiento_diario.mesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int yeari {
+                get {
+                    try {
+                        return ((int)(this[this.tablemovimiento_diario.yeariColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'yeari\' de la tabla \'movimiento_diario\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablemovimiento_diario.yeariColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isfecha_ingresoNull() {
                 return this.IsNull(this.tablemovimiento_diario.fecha_ingresoColumn);
             }
@@ -5018,6 +5125,42 @@ namespace Gerencialesv2 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetahorroNull() {
                 this[this.tablemovimiento_diario.ahorroColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsdiaNull() {
+                return this.IsNull(this.tablemovimiento_diario.diaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetdiaNull() {
+                this[this.tablemovimiento_diario.diaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsmesNull() {
+                return this.IsNull(this.tablemovimiento_diario.mesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetmesNull() {
+                this[this.tablemovimiento_diario.mesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsyeariNull() {
+                return this.IsNull(this.tablemovimiento_diario.yeariColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetyeariNull() {
+                this[this.tablemovimiento_diario.yeariColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -7861,101 +8004,10 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("gastos_administrativos", "gastos_administrativos");
             tableMapping.ColumnMappings.Add("otros_gastos", "otros_gastos");
             tableMapping.ColumnMappings.Add("ahorro", "ahorro");
+            tableMapping.ColumnMappings.Add("dia", "dia");
+            tableMapping.ColumnMappings.Add("mes", "mes");
+            tableMapping.ColumnMappings.Add("yeari", "yeari");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.Odbc.OdbcCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM ""BDGerencial"".""public"".""movimiento_diario"" WHERE ((""id_movimiento_diario"" = ?) AND ((? = 1 AND ""fecha_ingreso"" IS NULL) OR (""fecha_ingreso"" = ?)) AND (""id_equipo"" = ?) AND ((? = 1 AND ""maquina_inicio"" IS NULL) OR (""maquina_inicio"" = ?)) AND ((? = 1 AND ""maquina_final"" IS NULL) OR (""maquina_final"" = ?)) AND ((? = 1 AND ""numro_viajes"" IS NULL) OR (""numro_viajes"" = ?)) AND (""id_conductor"" = ?) AND ((? = 1 AND ""pasaje_actual"" IS NULL) OR (""pasaje_actual"" = ?)) AND ((? = 1 AND ""ingreso_neto"" IS NULL) OR (""ingreso_neto"" = ?)) AND ((? = 1 AND ""ingreso_bruto"" IS NULL) OR (""ingreso_bruto"" = ?)) AND ((? = 1 AND ""gastos_totales"" IS NULL) OR (""gastos_totales"" = ?)) AND ((? = 1 AND ""gastos_combutible"" IS NULL) OR (""gastos_combutible"" = ?)) AND ((? = 1 AND ""gastos_administrativos"" IS NULL) OR (""gastos_administrativos"" = ?)) AND ((? = 1 AND ""otros_gastos"" IS NULL) OR (""otros_gastos"" = ?)) AND ((? = 1 AND ""ahorro"" IS NULL) OR (""ahorro"" = ?)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_id_movimiento_diario", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_movimiento_diario", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_fecha_ingreso", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "fecha_ingreso", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_fecha_ingreso", global::System.Data.Odbc.OdbcType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "fecha_ingreso", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_id_equipo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_equipo", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_maquina_inicio", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "maquina_inicio", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_maquina_inicio", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_inicio", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_maquina_final", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "maquina_final", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_maquina_final", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_final", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_numro_viajes", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "numro_viajes", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_numro_viajes", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(5)), ((byte)(0)), "numro_viajes", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_id_conductor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_conductor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_pasaje_actual", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "pasaje_actual", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_pasaje_actual", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "pasaje_actual", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ingreso_neto", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_neto", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ingreso_neto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_neto", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ingreso_bruto", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_bruto", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ingreso_bruto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_bruto", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_gastos_totales", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_totales", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gastos_totales", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_totales", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_gastos_combutible", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_combutible", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gastos_combutible", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_combutible", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_gastos_administrativos", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_administrativos", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gastos_administrativos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_administrativos", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_otros_gastos", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "otros_gastos", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_otros_gastos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "otros_gastos", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ahorro", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ahorro", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ahorro", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ahorro", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.InsertCommand = new global::System.Data.Odbc.OdbcCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO ""BDGerencial"".""public"".""movimiento_diario"" (""fecha_ingreso"", ""id_equipo"", ""maquina_inicio"", ""maquina_final"", ""numro_viajes"", ""id_conductor"", ""pasaje_actual"", ""ingreso_neto"", ""ingreso_bruto"", ""gastos_totales"", ""gastos_combutible"", ""gastos_administrativos"", ""otros_gastos"", ""ahorro"") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("fecha_ingreso", global::System.Data.Odbc.OdbcType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "fecha_ingreso", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("id_equipo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_equipo", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("maquina_inicio", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_inicio", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("maquina_final", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_final", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("numro_viajes", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(5)), ((byte)(0)), "numro_viajes", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("id_conductor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_conductor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("pasaje_actual", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "pasaje_actual", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ingreso_neto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_neto", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ingreso_bruto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_bruto", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gastos_totales", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_totales", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gastos_combutible", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_combutible", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gastos_administrativos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_administrativos", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("otros_gastos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "otros_gastos", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ahorro", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ahorro", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand = new global::System.Data.Odbc.OdbcCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE ""BDGerencial"".""public"".""movimiento_diario"" SET ""fecha_ingreso"" = ?, ""id_equipo"" = ?, ""maquina_inicio"" = ?, ""maquina_final"" = ?, ""numro_viajes"" = ?, ""id_conductor"" = ?, ""pasaje_actual"" = ?, ""ingreso_neto"" = ?, ""ingreso_bruto"" = ?, ""gastos_totales"" = ?, ""gastos_combutible"" = ?, ""gastos_administrativos"" = ?, ""otros_gastos"" = ?, ""ahorro"" = ? WHERE ((""id_movimiento_diario"" = ?) AND ((? = 1 AND ""fecha_ingreso"" IS NULL) OR (""fecha_ingreso"" = ?)) AND (""id_equipo"" = ?) AND ((? = 1 AND ""maquina_inicio"" IS NULL) OR (""maquina_inicio"" = ?)) AND ((? = 1 AND ""maquina_final"" IS NULL) OR (""maquina_final"" = ?)) AND ((? = 1 AND ""numro_viajes"" IS NULL) OR (""numro_viajes"" = ?)) AND (""id_conductor"" = ?) AND ((? = 1 AND ""pasaje_actual"" IS NULL) OR (""pasaje_actual"" = ?)) AND ((? = 1 AND ""ingreso_neto"" IS NULL) OR (""ingreso_neto"" = ?)) AND ((? = 1 AND ""ingreso_bruto"" IS NULL) OR (""ingreso_bruto"" = ?)) AND ((? = 1 AND ""gastos_totales"" IS NULL) OR (""gastos_totales"" = ?)) AND ((? = 1 AND ""gastos_combutible"" IS NULL) OR (""gastos_combutible"" = ?)) AND ((? = 1 AND ""gastos_administrativos"" IS NULL) OR (""gastos_administrativos"" = ?)) AND ((? = 1 AND ""otros_gastos"" IS NULL) OR (""otros_gastos"" = ?)) AND ((? = 1 AND ""ahorro"" IS NULL) OR (""ahorro"" = ?)))";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("fecha_ingreso", global::System.Data.Odbc.OdbcType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "fecha_ingreso", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("id_equipo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_equipo", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("maquina_inicio", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_inicio", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("maquina_final", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_final", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("numro_viajes", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(5)), ((byte)(0)), "numro_viajes", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("id_conductor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_conductor", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("pasaje_actual", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "pasaje_actual", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ingreso_neto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_neto", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ingreso_bruto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_bruto", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gastos_totales", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_totales", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gastos_combutible", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_combutible", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("gastos_administrativos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_administrativos", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("otros_gastos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "otros_gastos", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("ahorro", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ahorro", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_id_movimiento_diario", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_movimiento_diario", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_fecha_ingreso", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "fecha_ingreso", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_fecha_ingreso", global::System.Data.Odbc.OdbcType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "fecha_ingreso", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_id_equipo", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_equipo", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_maquina_inicio", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "maquina_inicio", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_maquina_inicio", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_inicio", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_maquina_final", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "maquina_final", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_maquina_final", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(10)), ((byte)(0)), "maquina_final", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_numro_viajes", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "numro_viajes", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_numro_viajes", global::System.Data.Odbc.OdbcType.Numeric, 0, global::System.Data.ParameterDirection.Input, ((byte)(5)), ((byte)(0)), "numro_viajes", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_id_conductor", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "id_conductor", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_pasaje_actual", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "pasaje_actual", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_pasaje_actual", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "pasaje_actual", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ingreso_neto", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_neto", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ingreso_neto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_neto", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ingreso_bruto", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_bruto", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ingreso_bruto", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ingreso_bruto", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_gastos_totales", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_totales", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gastos_totales", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_totales", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_gastos_combutible", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_combutible", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gastos_combutible", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_combutible", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_gastos_administrativos", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_administrativos", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_gastos_administrativos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "gastos_administrativos", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_otros_gastos", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "otros_gastos", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_otros_gastos", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "otros_gastos", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("IsNull_ahorro", global::System.Data.Odbc.OdbcType.Int, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ahorro", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.Odbc.OdbcParameter("Original_ahorro", global::System.Data.Odbc.OdbcType.Double, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ahorro", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7971,7 +8023,9 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
             this._commandCollection = new global::System.Data.Odbc.OdbcCommand[1];
             this._commandCollection[0] = new global::System.Data.Odbc.OdbcCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT ""id_movimiento_diario"", ""fecha_ingreso"", ""id_equipo"", ""maquina_inicio"", ""maquina_final"", ""numro_viajes"", ""id_conductor"", ""pasaje_actual"", ""ingreso_neto"", ""ingreso_bruto"", ""gastos_totales"", ""gastos_combutible"", ""gastos_administrativos"", ""otros_gastos"", ""ahorro"" FROM ""public"".""movimiento_diario""";
+            this._commandCollection[0].CommandText = @"SELECT        id_movimiento_diario, fecha_ingreso, id_equipo, maquina_inicio, maquina_final, numro_viajes, id_conductor, pasaje_actual, ingreso_neto, ingreso_bruto, 
+                         gastos_totales, gastos_combutible, gastos_administrativos, otros_gastos, ahorro, dia, mes, yeari
+FROM            ""public"".movimiento_diario";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7997,209 +8051,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
             BDGerencialDataSet.movimiento_diarioDataTable dataTable = new BDGerencialDataSet.movimiento_diarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BDGerencialDataSet.movimiento_diarioDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(BDGerencialDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "movimiento_diario");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id_movimiento_diario, System.DateTime Original_fecha_ingreso, int Original_id_equipo, decimal Original_maquina_inicio, decimal Original_maquina_final, decimal Original_numro_viajes, int Original_id_conductor, double Original_pasaje_actual, double Original_ingreso_neto, double Original_ingreso_bruto, double Original_gastos_totales, double Original_gastos_combutible, double Original_gastos_administrativos, double Original_otros_gastos, double Original_ahorro) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_movimiento_diario));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_fecha_ingreso));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_id_equipo));
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((decimal)(Original_maquina_inicio));
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[7].Value = ((decimal)(Original_maquina_final));
-            this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[9].Value = ((decimal)(Original_numro_viajes));
-            this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_id_conductor));
-            this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[12].Value = ((double)(Original_pasaje_actual));
-            this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[14].Value = ((double)(Original_ingreso_neto));
-            this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[16].Value = ((double)(Original_ingreso_bruto));
-            this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[18].Value = ((double)(Original_gastos_totales));
-            this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[20].Value = ((double)(Original_gastos_combutible));
-            this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[22].Value = ((double)(Original_gastos_administrativos));
-            this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[24].Value = ((double)(Original_otros_gastos));
-            this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[26].Value = ((double)(Original_ahorro));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime fecha_ingreso, int id_equipo, decimal maquina_inicio, decimal maquina_final, decimal numro_viajes, int id_conductor, double pasaje_actual, double ingreso_neto, double ingreso_bruto, double gastos_totales, double gastos_combutible, double gastos_administrativos, double otros_gastos, double ahorro) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(fecha_ingreso));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(id_equipo));
-            this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(maquina_inicio));
-            this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(maquina_final));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(numro_viajes));
-            this.Adapter.InsertCommand.Parameters[5].Value = ((int)(id_conductor));
-            this.Adapter.InsertCommand.Parameters[6].Value = ((double)(pasaje_actual));
-            this.Adapter.InsertCommand.Parameters[7].Value = ((double)(ingreso_neto));
-            this.Adapter.InsertCommand.Parameters[8].Value = ((double)(ingreso_bruto));
-            this.Adapter.InsertCommand.Parameters[9].Value = ((double)(gastos_totales));
-            this.Adapter.InsertCommand.Parameters[10].Value = ((double)(gastos_combutible));
-            this.Adapter.InsertCommand.Parameters[11].Value = ((double)(gastos_administrativos));
-            this.Adapter.InsertCommand.Parameters[12].Value = ((double)(otros_gastos));
-            this.Adapter.InsertCommand.Parameters[13].Value = ((double)(ahorro));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    System.DateTime fecha_ingreso, 
-                    int id_equipo, 
-                    decimal maquina_inicio, 
-                    decimal maquina_final, 
-                    decimal numro_viajes, 
-                    int id_conductor, 
-                    double pasaje_actual, 
-                    double ingreso_neto, 
-                    double ingreso_bruto, 
-                    double gastos_totales, 
-                    double gastos_combutible, 
-                    double gastos_administrativos, 
-                    double otros_gastos, 
-                    double ahorro, 
-                    int Original_id_movimiento_diario, 
-                    System.DateTime Original_fecha_ingreso, 
-                    int Original_id_equipo, 
-                    decimal Original_maquina_inicio, 
-                    decimal Original_maquina_final, 
-                    decimal Original_numro_viajes, 
-                    int Original_id_conductor, 
-                    double Original_pasaje_actual, 
-                    double Original_ingreso_neto, 
-                    double Original_ingreso_bruto, 
-                    double Original_gastos_totales, 
-                    double Original_gastos_combutible, 
-                    double Original_gastos_administrativos, 
-                    double Original_otros_gastos, 
-                    double Original_ahorro) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(fecha_ingreso));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(id_equipo));
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(maquina_inicio));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(maquina_final));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(numro_viajes));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(id_conductor));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((double)(pasaje_actual));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((double)(ingreso_neto));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((double)(ingreso_bruto));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((double)(gastos_totales));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((double)(gastos_combutible));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((double)(gastos_administrativos));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((double)(otros_gastos));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((double)(ahorro));
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_id_movimiento_diario));
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_fecha_ingreso));
-            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_id_equipo));
-            this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((decimal)(Original_maquina_inicio));
-            this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[21].Value = ((decimal)(Original_maquina_final));
-            this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(Original_numro_viajes));
-            this.Adapter.UpdateCommand.Parameters[24].Value = ((int)(Original_id_conductor));
-            this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[26].Value = ((double)(Original_pasaje_actual));
-            this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[28].Value = ((double)(Original_ingreso_neto));
-            this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[30].Value = ((double)(Original_ingreso_bruto));
-            this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[32].Value = ((double)(Original_gastos_totales));
-            this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[34].Value = ((double)(Original_gastos_combutible));
-            this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[36].Value = ((double)(Original_gastos_administrativos));
-            this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[38].Value = ((double)(Original_otros_gastos));
-            this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[40].Value = ((double)(Original_ahorro));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
         }
     }
     
@@ -9493,8 +9344,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
         
         private menuTableAdapter _menuTableAdapter;
         
-        private movimiento_diarioTableAdapter _movimiento_diarioTableAdapter;
-        
         private propietarioTableAdapter _propietarioTableAdapter;
         
         private rolTableAdapter _rolTableAdapter;
@@ -9607,20 +9456,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public movimiento_diarioTableAdapter movimiento_diarioTableAdapter {
-            get {
-                return this._movimiento_diarioTableAdapter;
-            }
-            set {
-                this._movimiento_diarioTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
         public propietarioTableAdapter propietarioTableAdapter {
             get {
                 return this._propietarioTableAdapter;
@@ -9715,10 +9550,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                             && (this._menuTableAdapter.Connection != null))) {
                     return this._menuTableAdapter.Connection;
                 }
-                if (((this._movimiento_diarioTableAdapter != null) 
-                            && (this._movimiento_diarioTableAdapter.Connection != null))) {
-                    return this._movimiento_diarioTableAdapter.Connection;
-                }
                 if (((this._propietarioTableAdapter != null) 
                             && (this._propietarioTableAdapter.Connection != null))) {
                     return this._propietarioTableAdapter.Connection;
@@ -9766,9 +9597,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                 if ((this._menuTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._movimiento_diarioTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 if ((this._propietarioTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -9798,15 +9626,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._propietarioTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._movimiento_diarioTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.movimiento_diario.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._movimiento_diarioTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -9906,14 +9725,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._propietarioTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._movimiento_diarioTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.movimiento_diario.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._movimiento_diarioTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -10071,14 +9882,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._movimiento_diarioTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.movimiento_diario.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._movimiento_diarioTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._propietarioTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.propietario.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -10153,11 +9956,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
             }
             if (((this._menuTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._menuTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
-                        "sma cadena de conexión.");
-            }
-            if (((this._movimiento_diarioTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._movimiento_diarioTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Todos los TableAdapters administrados por un TableAdapterManager deben usar la mi" +
                         "sma cadena de conexión.");
             }
@@ -10265,15 +10063,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                     if (this._menuTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._menuTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._menuTableAdapter.Adapter);
-                    }
-                }
-                if ((this._movimiento_diarioTableAdapter != null)) {
-                    revertConnections.Add(this._movimiento_diarioTableAdapter, this._movimiento_diarioTableAdapter.Connection);
-                    this._movimiento_diarioTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(workConnection));
-                    this._movimiento_diarioTableAdapter.Transaction = ((global::System.Data.Odbc.OdbcTransaction)(workTransaction));
-                    if (this._movimiento_diarioTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._movimiento_diarioTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._movimiento_diarioTableAdapter.Adapter);
                     }
                 }
                 if ((this._propietarioTableAdapter != null)) {
@@ -10393,10 +10182,6 @@ namespace Gerencialesv2.BDGerencialDataSetTableAdapters {
                 if ((this._menuTableAdapter != null)) {
                     this._menuTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._menuTableAdapter]));
                     this._menuTableAdapter.Transaction = null;
-                }
-                if ((this._movimiento_diarioTableAdapter != null)) {
-                    this._movimiento_diarioTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._movimiento_diarioTableAdapter]));
-                    this._movimiento_diarioTableAdapter.Transaction = null;
                 }
                 if ((this._propietarioTableAdapter != null)) {
                     this._propietarioTableAdapter.Connection = ((global::System.Data.Odbc.OdbcConnection)(revertConnections[this._propietarioTableAdapter]));
