@@ -88,5 +88,27 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
+        public void crearRT1(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
+            ca.SetParameterValue("fechaini", fechaini);
+            ca.SetParameterValue("fechafin", fechafin);
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
+        public void crearRT2(reportes.frmGastosTotalesViajesSF rpt)
+        {
+            //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
+            reportes.gastosTotalesViajesSF ca = new reportes.gastosTotalesViajesSF();
+            ca.SetParameterValue("user", userName);
+            rpt.crystalReportViewer1.ReportSource = ca;
+            // rpt.Parent = this;
+            // this.Hide();
+            rpt.Show();
+        }
     }
 }

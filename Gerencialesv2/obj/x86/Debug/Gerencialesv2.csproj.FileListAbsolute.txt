@@ -12,13 +12,14 @@ c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv
 c:\users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
 C:\Users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csprojResolveAssemblyReference.cache
 C:\Users\chali2\documents\visual studio 2010\Projects\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosAdmin.resources
-C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe.config
-C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe
-C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajesSF.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresosViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroCostoBeneficio.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresoNeto.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmGastosTotalesViajesSF.resources
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresosTotalesViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmGastosTotalesViajes.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostoBeneficio.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresoNeto.resources
@@ -31,5 +32,8 @@ C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.P
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosAdmin.resources
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe.config
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.exe
+C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\Gerencialesv2\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb

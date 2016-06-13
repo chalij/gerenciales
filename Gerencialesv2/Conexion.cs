@@ -127,6 +127,30 @@ namespace Gerencialesv2
                 //Se muestra vista
                 f1.Show();
             }
+            if (Convert.ToInt32(ItemClick.Name) == 10)
+            {
+                filtros.FiltroGastoViajes f1 = new filtros.FiltroGastoViajes();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 17)
+            {
+                filtros.FiltroIngresosViajes f1 = new filtros.FiltroIngresosViajes();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
+            if (Convert.ToInt32(ItemClick.Name) == 18)
+            {
+                filtros.FiltroGastoViajesSF f1 = new filtros.FiltroGastoViajesSF();
+                f1.principal = principal;
+                f1.MdiParent = principal;
+                //Se muestra vista
+                f1.Show();
+            }
             if (Convert.ToInt32(ItemClick.Name) == 16)
             {
                 principal.Hide();

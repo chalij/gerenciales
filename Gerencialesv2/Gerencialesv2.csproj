@@ -70,6 +70,18 @@
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="filtros\FiltroGastoViajesSF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filtros\FiltroGastoViajesSF.Designer.cs">
+      <DependentUpon>FiltroGastoViajesSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtros\FiltroIngresosViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filtros\FiltroIngresosViajes.Designer.cs">
+      <DependentUpon>FiltroIngresosViajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="filtros\FiltroGastoViajes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,30 @@
     </Compile>
     <Compile Include="filtros\FiltroIngresoNeto.Designer.cs">
       <DependentUpon>FiltroIngresoNeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmGastosTotalesViajesSF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmGastosTotalesViajesSF.Designer.cs">
+      <DependentUpon>frmGastosTotalesViajesSF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\gastosTotalesViajesSF.cs">
+      <DependentUpon>gastosTotalesViajesSF.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="reportes\frmIngresosTotalesViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmIngresosTotalesViajes.Designer.cs">
+      <DependentUpon>frmIngresosTotalesViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\ingresoTotalesViajes.cs">
+      <DependentUpon>ingresoTotalesViajes.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="reportes\frmGastosTotalesViajes.cs">
       <SubType>Form</SubType>
@@ -168,6 +204,12 @@
     <Compile Include="reportes\frmcostosAdmin.Designer.cs">
       <DependentUpon>frmcostosAdmin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="filtros\FiltroGastoViajesSF.resx">
+      <DependentUpon>FiltroGastoViajesSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filtros\FiltroIngresosViajes.resx">
+      <DependentUpon>FiltroIngresosViajes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroGastoViajes.resx">
       <DependentUpon>FiltroGastoViajes.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +218,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="filtros\FiltroIngresoNeto.resx">
       <DependentUpon>FiltroIngresoNeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmGastosTotalesViajesSF.resx">
+      <DependentUpon>frmGastosTotalesViajesSF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\gastosTotalesViajesSF.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>gastosTotalesViajesSF.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmIngresosTotalesViajes.resx">
+      <DependentUpon>frmIngresosTotalesViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\ingresoTotalesViajes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ingresoTotalesViajes.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="reportes\frmGastosTotalesViajes.resx">
       <DependentUpon>frmGastosTotalesViajes.cs</DependentUpon>
