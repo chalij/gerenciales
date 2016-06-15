@@ -629,5 +629,7 @@ namespace Gerencialesv2
             result = System.Text.Encoding.Unicode.GetString(decryted);
             return result;
         }
+
+
     }
 }

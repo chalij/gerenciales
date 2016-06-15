@@ -69,6 +69,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BDTransacDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDTransacDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="filtros\FiltroIngresosViajesMes.cs">
       <SubType>Form</SubType>
@@ -448,6 +453,17 @@
     </None>
     <None Include="BDGerencialDataSet2.xss">
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BDTransacDataSet.xsc">
+      <DependentUpon>BDTransacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDTransacDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDTransacDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDTransacDataSet.xss">
+      <DependentUpon>BDTransacDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

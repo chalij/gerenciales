@@ -10,6 +10,7 @@ using System.Data.SqlClient;
 using System.Data.Odbc;
 using System.Collections;
 
+
 namespace Gerencialesv2
 {
     public partial class frmPrincipal : Form
@@ -175,5 +176,11 @@ namespace Gerencialesv2
         {
 
         }
+
+        /*private void usuarios(object sender, EventArgs e)
+        {
+            mtUser user = new mtUser();
+            user.show();
+        }*/
     }
 }
