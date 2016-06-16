@@ -67,21 +67,66 @@ namespace Gerencialesv2.formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // BindingNavigatorAddNewItem.PerformClick();
+             try
+            {
+                DbConnection.Open();
+                DataSet data = new DataSet();
+                OdbcDataAdapter adapter = new OdbcDataAdapter();
+                OdbcCommandBuilder builer = new OdbcCommandBuilder(adapter);
+                adapter.InsertCommand = new OdbcCommand(
+                                         "INSERT INTO usuario VALUES (" + id_usuarioTextBox.Text + "','" + id_rolComboBox.Text + "','"+ id_usuarioTextBox.Text + "','"+ passwordTextBox.Text+"')'",
+                                         DbConnection);
+                
+                adapter.Fill(data);
+                DbConnection.Close();
+
+
+            }
+            catch (Exception ex) { }
         }
 
         private void EditarB_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DbConnection.Open();
+                DataSet data = new DataSet();
+                OdbcDataAdapter adapter = new OdbcDataAdapter();
+                OdbcCommandBuilder builer = new OdbcCommandBuilder(adapter);
+                adapter.UpdateCommand = new OdbcCommand(
+                                         "UPDATE usuario SET ('" + id_usuarioTextBox.Text + "','" + id_rolComboBox.Text + "','" + id_usuarioTextBox.Text + "','" + passwordTextBox.Text+"')'",
+                                         DbConnection);
+
+                adapter.Fill(data);
+                tUsuarios.Refresh();
+                DbConnection.Close();
 
 
-            //DataBindingNavidatorSaveItem.PerfomClick();
+            }
+            catch (Exception ex) { }
 
         }
 
         private void eliminarB_Click(object sender, EventArgs e)
         {
-            bindingNavigatorDeleteItem.PerformClick();
-            //MsgBox("Datos eliminados");
+            try
+            {
+                DbConnection.Open();
+                DataSet data = new DataSet();
+                OdbcDataAdapter adapter = new OdbcDataAdapter();
+                OdbcCommandBuilder builer = new OdbcCommandBuilder(adapter);
+                adapter.UpdateCommand = new OdbcCommand(
+                                         "DELETE FROM usuario WHERE ID_USUARIO = "+ id_usuarioTextBox.Text,
+                                         DbConnection);
+
+                adapter.Fill(data);
+                tUsuarios.Refresh();
+                DbConnection.Close();
+
+
+            }
+            catch (Exception ex) { }
+
         }
     }
 }

@@ -60,6 +60,7 @@
             this.CrearB = new System.Windows.Forms.Button();
             this.EditarB = new System.Windows.Forms.Button();
             this.eliminarB = new System.Windows.Forms.Button();
+            this.usuarioTableAdapter1 = new Gerencialesv2.BDGerencialDataSet2TableAdapters.usuarioTableAdapter();
             id_usuarioLabel = new System.Windows.Forms.Label();
             id_rolLabel = new System.Windows.Forms.Label();
             usuarioLabel = new System.Windows.Forms.Label();
@@ -285,7 +286,7 @@
             this.ROL,
             this.USUARIO});
             this.tUsuarios.GridColor = System.Drawing.SystemColors.Control;
-            this.tUsuarios.Location = new System.Drawing.Point(59, 178);
+            this.tUsuarios.Location = new System.Drawing.Point(63, 178);
             this.tUsuarios.Name = "tUsuarios";
             this.tUsuarios.Size = new System.Drawing.Size(345, 180);
             this.tUsuarios.TabIndex = 9;
@@ -334,6 +335,10 @@
             this.eliminarB.Text = "Eliminar";
             this.eliminarB.UseVisualStyleBackColor = true;
             this.eliminarB.Click += new System.EventHandler(this.eliminarB_Click);
+            // 
+            // usuarioTableAdapter1
+            // 
+            this.usuarioTableAdapter1.ClearBeforeFill = true;
             // 
             // mtUser
             // 
@@ -400,5 +405,6 @@
         private System.Windows.Forms.Button CrearB;
         private System.Windows.Forms.Button EditarB;
         private System.Windows.Forms.Button eliminarB;
+        private BDGerencialDataSet2TableAdapters.usuarioTableAdapter usuarioTableAdapter1;
     }
 }

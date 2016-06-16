@@ -130,9 +130,7 @@
             // 
             // usuario
             // 
-            this.usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.usuario.Location = new System.Drawing.Point(201, 155);
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(171, 20);
