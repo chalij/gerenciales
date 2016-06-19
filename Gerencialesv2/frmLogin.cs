@@ -26,6 +26,7 @@ namespace Gerencialesv2
                 form.userName = usuario.Text;
                 form.pasword = con.encriptar(password.Text);
                 form.login = this;
+                form.label1.Text = "BIENVENIDOS/AS " + usuario.Text.ToUpper();
                 usuario.Text = "";
                 password.Text="";
                 this.Hide();

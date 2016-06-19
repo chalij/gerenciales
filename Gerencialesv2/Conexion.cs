@@ -94,6 +94,7 @@ namespace Gerencialesv2
         private void Eventos(Object sender, EventArgs e)
         {
             ToolStripMenuItem ItemClick = (ToolStripMenuItem)sender;
+            principal.label1.Visible = false;
             //Agregar condicion Para mostrar vista
             if (Convert.ToInt32(ItemClick.Name) == 5)
             {

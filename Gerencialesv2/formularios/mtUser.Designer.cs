@@ -255,6 +255,7 @@
             this.id_rolComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.usuarioBindingSource, "id_rol", true));
             this.id_rolComboBox.DataSource = this.rolBindingSource;
             this.id_rolComboBox.DisplayMember = "rol";
+            this.id_rolComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.id_rolComboBox.FormattingEnabled = true;
             this.id_rolComboBox.Location = new System.Drawing.Point(95, 68);
             this.id_rolComboBox.Name = "id_rolComboBox";
