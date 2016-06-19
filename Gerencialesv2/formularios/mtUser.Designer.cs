@@ -55,6 +55,9 @@
             this.id_rolComboBox = new System.Windows.Forms.ComboBox();
             this.usuarioTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.bDGerencialDataSet2 = new Gerencialesv2.BDGerencialDataSet2();
+            this.rolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rolTableAdapter = new Gerencialesv2.BDGerencialDataSet2TableAdapters.rolTableAdapter();
             id_usuarioLabel = new System.Windows.Forms.Label();
             id_rolLabel = new System.Windows.Forms.Label();
             usuarioLabel = new System.Windows.Forms.Label();
@@ -63,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingNavigator)).BeginInit();
             this.usuarioBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bDGerencialDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bDGerencialDataSet
@@ -246,12 +251,16 @@
             // 
             // id_rolComboBox
             // 
-            this.id_rolComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuarioBindingSource, "id_rol", true));
+            this.id_rolComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rolBindingSource, "rol", true));
+            this.id_rolComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.usuarioBindingSource, "id_rol", true));
+            this.id_rolComboBox.DataSource = this.rolBindingSource;
+            this.id_rolComboBox.DisplayMember = "rol";
             this.id_rolComboBox.FormattingEnabled = true;
             this.id_rolComboBox.Location = new System.Drawing.Point(95, 68);
             this.id_rolComboBox.Name = "id_rolComboBox";
             this.id_rolComboBox.Size = new System.Drawing.Size(121, 21);
             this.id_rolComboBox.TabIndex = 4;
+            this.id_rolComboBox.ValueMember = "id_rol";
             // 
             // usuarioLabel
             // 
@@ -288,6 +297,20 @@
             this.passwordTextBox.Size = new System.Drawing.Size(121, 20);
             this.passwordTextBox.TabIndex = 8;
             // 
+            // bDGerencialDataSet2
+            // 
+            this.bDGerencialDataSet2.DataSetName = "BDGerencialDataSet2";
+            this.bDGerencialDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rolBindingSource
+            // 
+            this.rolBindingSource.DataMember = "rol";
+            this.rolBindingSource.DataSource = this.bDGerencialDataSet2;
+            // 
+            // rolTableAdapter
+            // 
+            this.rolTableAdapter.ClearBeforeFill = true;
+            // 
             // mtUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,6 +333,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.usuarioBindingNavigator)).EndInit();
             this.usuarioBindingNavigator.ResumeLayout(false);
             this.usuarioBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bDGerencialDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rolBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,6 +363,9 @@
         private System.Windows.Forms.ComboBox id_rolComboBox;
         private System.Windows.Forms.TextBox usuarioTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
+        private BDGerencialDataSet2 bDGerencialDataSet2;
+        private System.Windows.Forms.BindingSource rolBindingSource;
+        private BDGerencialDataSet2TableAdapters.rolTableAdapter rolTableAdapter;
 
     }
 }

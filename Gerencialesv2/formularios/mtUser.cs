@@ -31,6 +31,8 @@ namespace Gerencialesv2.formularios
 
         private void mtUser_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'bDGerencialDataSet2.rol' Puede moverla o quitarla según sea necesario.
+            this.rolTableAdapter.Fill(this.bDGerencialDataSet2.rol);
             // TODO: esta línea de código carga datos en la tabla 'bDGerencialDataSet.usuario' Puede moverla o quitarla según sea necesario.
             this.usuarioTableAdapter.Fill(this.bDGerencialDataSet.usuario);
 
