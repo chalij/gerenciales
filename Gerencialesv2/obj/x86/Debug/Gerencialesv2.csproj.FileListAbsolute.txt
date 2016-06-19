@@ -99,9 +99,8 @@ E:\CICLO 1-2016\SIG\SIG\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.re
 E:\CICLO 1-2016\SIG\SIG\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csproj.GenerateResource.Cache
 E:\CICLO 1-2016\SIG\SIG\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
 E:\CICLO 1-2016\SIG\SIG\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
+E:\CICLO 1-2016\SIG\SIG\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csprojResolveAssemblyReference.cache
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\bin\Debug\Gerencialesv2.exe.config
-C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
-C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\bin\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\ResolveAssemblyReference.cache
@@ -134,4 +133,5 @@ C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosAdmin.resources
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\GenerateResource.write.1.tlog
-E:\CICLO 1-2016\SIG\SIG\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csprojResolveAssemblyReference.cache
+C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
+C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb

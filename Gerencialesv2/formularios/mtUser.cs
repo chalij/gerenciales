@@ -36,8 +36,47 @@ namespace Gerencialesv2.formularios
             // TODO: esta línea de código carga datos en la tabla 'bDGerencialDataSet.usuario' Puede moverla o quitarla según sea necesario.
             this.usuarioTableAdapter.Fill(this.bDGerencialDataSet.usuario);
 
+
+            Conexion con = new Conexion();
+            Dictionary<string, string> test = con.ListaUsuarios();
+            rol.DataSource = new BindingSource(test, null);
+            rol.DisplayMember = "Value";
+            rol.ValueMember = "Key";
+            string value = ((KeyValuePair<string, string>)rol.SelectedItem).Value;
+            rol.SelectedValue = id_rolTextBox.Text;
+
         }
 
+        private void rol_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            this.id_rolTextBox.Text = rol.SelectedValue + "";
+            string value = ((KeyValuePair<string, string>)rol.SelectedItem).Value;
+        }
+
+        private void id_rolTextBox_TextChanged(object sender, EventArgs e)
+        {
+            rol.SelectedValue = id_rolTextBox.Text;
+        }
+
+        private void rol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void id_usuarioTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usuarioTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
     }
 }

@@ -530,6 +530,30 @@ namespace Gerencialesv2
             return result;
         }
 
+        public Dictionary<string, string> ListaUsuarios()
+        {
+            List<Item> usuarios = new List<Item>();
+            Dictionary<string, string> test = new Dictionary<string, string>();
+            try
+            {
+                DbConnection.Open();
+                OdbcCommand DbCommand = DbConnection.CreateCommand();
+                DbCommand.CommandText = "select * from rol order by id_rol";
+                OdbcDataReader DbReader = DbCommand.ExecuteReader();
+
+                while (DbReader.Read())
+                {
+                    test.Add(DbReader[0] + "", DbReader[1] + "");
+                }
+                DbConnection.Close();
+                return test;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
+
 
     }
 }
