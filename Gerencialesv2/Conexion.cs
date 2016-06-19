@@ -360,23 +360,8 @@ namespace Gerencialesv2
                     label1.Text = "Ingresando Conductores...";
                     label1.Refresh();
                     DbCommandG = DbConnectionG.CreateCommand();
-                    DbCommandG.CommandText = "INSERT INTO conductor(nombre)VALUES ('" + DbReaderT[1] + "');";
+                    DbCommandG.CommandText = "INSERT INTO conductor(id_conductor,nombre)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "');";
                     DbReaderG = DbCommandG.ExecuteReader();
-
-
-                    OdbcCommand DbCommandG2 = DbConnectionG.CreateCommand();
-                    DbCommandG2.CommandText = "SELECT MAX(id_conductor) FROM conductor;";
-                    OdbcDataReader DbReaderG2 = DbCommandG2.ExecuteReader();
-
-                    while (DbReaderG2.Read())
-                    {
-                        OdbcCommand DbCommandGTemp = DbConnectionG.CreateCommand();
-                        DbCommandGTemp.CommandText = "INSERT INTO temporal(id_gerencial,id_transaccional,tabla_gerencial)VALUES ('" + DbReaderG2[0] + "','" + DbReaderT[0] + "','conductor');";
-                        DbCommandGTemp.ExecuteReader();
-
-                        label1.Text = "Ingresando Conductores..";
-                        label1.Refresh();
-                    }
                 }
                 String etlPropietario = "select * from selectProp() as f(propietario integer,nombree character varying(50),dui character varying(15),nit character varying(15));";
 
@@ -391,21 +376,8 @@ namespace Gerencialesv2
                     label1.Text = "Ingresando Propietarios...";
                     label1.Refresh();
                     OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
-                    CommandGprop.CommandText = "INSERT INTO propietario(nombre_empresario,nit,dui)VALUES ('" + DbReaderT[1] + "','" + DbReaderT[2] + "','" + DbReaderT[3] + "');";
+                    CommandGprop.CommandText = "INSERT INTO propietario(id_propietario,nombre_empresario,nit,dui)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderT[2] + "','" + DbReaderT[3] + "');";
                     CommandGprop.ExecuteReader();
-
-                    OdbcCommand DbCommandG2 = DbConnectionG.CreateCommand();
-                    DbCommandG2.CommandText = "SELECT MAX(id_propietario) FROM propietario;";
-                    OdbcDataReader DbReaderG2 = DbCommandG2.ExecuteReader();
-
-                    while (DbReaderG2.Read())
-                    {
-                        OdbcCommand DbCommandGTemp = DbConnectionG.CreateCommand();
-                        DbCommandGTemp.CommandText = "INSERT INTO temporal(id_gerencial,id_transaccional,tabla_gerencial)VALUES ('" + DbReaderG2[0] + "','" + DbReaderT[0] + "','propietario');";
-                        DbCommandGTemp.ExecuteReader();
-                        label1.Text = "Ingresando Propietarios..";
-                        label1.Refresh();
-                    }
                 }
 
 
@@ -419,24 +391,11 @@ namespace Gerencialesv2
                 label1.Refresh();
                 while (DbReaderT.Read())
                 {
-                    label1.Text = "Ingresando Gastos..,";
+                    label1.Text = "Ingresando Gastos...";
                     label1.Refresh();
                     OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
                     CommandGprop.CommandText = "INSERT INTO gasto(id_gasto,nombre_gasto,descripcion,es_gasto_admin)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderT[2] + "','" + DbReaderT[3] + "');";
                     CommandGprop.ExecuteReader();
-
-                    OdbcCommand DbCommandG2 = DbConnectionG.CreateCommand();
-                    DbCommandG2.CommandText = "SELECT MAX(id_gasto) FROM gasto;";
-                    OdbcDataReader DbReaderG2 = DbCommandG2.ExecuteReader();
-
-                    while (DbReaderG2.Read())
-                    {
-                        OdbcCommand DbCommandGTemp = DbConnectionG.CreateCommand();
-                        DbCommandGTemp.CommandText = "INSERT INTO temporal(id_gerencial,id_transaccional,tabla_gerencial)VALUES ('" + DbReaderG2[0] + "','" + DbReaderT[0] + "','gasto');";
-                        DbCommandGTemp.ExecuteReader();
-                        label1.Text = "Ingresando Gastos..";
-                        label1.Refresh();
-                    }
                 }
 
 
@@ -452,39 +411,9 @@ namespace Gerencialesv2
                 {
                     label1.Text = "Ingresando Equipos...";
                     label1.Refresh();
-
-                    OdbcCommand DbCommandFKC = DbConnectionG.CreateCommand();
-                    DbCommandFKC.CommandText = "SELECT * from temporal where id_transaccional=" + DbReaderT[1] + " and tabla_gerencial='conductor'";
-                    OdbcDataReader DbReaderG3 = DbCommandFKC.ExecuteReader();
-
-                    while (DbReaderG3.Read())
-                    {
-                        OdbcCommand DbCommandFKE = DbConnectionG.CreateCommand();
-                        DbCommandFKE.CommandText = "SELECT * from temporal where id_transaccional=" + DbReaderT[2] + " and tabla_gerencial='propietario'";
-                        OdbcDataReader DbReaderG4 = DbCommandFKE.ExecuteReader();
-
-                        while (DbReaderG4.Read())
-                        {
-                            OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
-                            CommandGprop.CommandText = "INSERT INTO equipo(id_equipo,id_conductor,id_propietario,marca,placa)VALUES ('" + DbReaderT[0] + "','" + DbReaderG3[0] + "','" + DbReaderG4[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4]  + "');";
-                            CommandGprop.ExecuteReader();
-
-
-                             OdbcCommand DbCommandG2 = DbConnectionG.CreateCommand();
-                             DbCommandG2.CommandText = "SELECT MAX(id_equipo) FROM equipo;";
-                             OdbcDataReader DbReaderG2 = DbCommandG2.ExecuteReader();
-
-                             while (DbReaderG2.Read())
-                             {
-                                 OdbcCommand DbCommandGTemp = DbConnectionG.CreateCommand();
-                                 DbCommandGTemp.CommandText = "INSERT INTO temporal(id_gerencial,id_transaccional,tabla_gerencial)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[0] + "','equipo');";
-                                 DbCommandGTemp.ExecuteReader();
-                                 label1.Text = "Ingresando Equipos..";
-                                 label1.Refresh();
-                             }
-                        }
-
-                    }
+                    OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
+                    CommandGprop.CommandText = "INSERT INTO equipo(id_equipo,id_conductor,id_propietario,marca,placa)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderT[2] + "','" + DbReaderT[3] + "','" + DbReaderT[4]  + "');";
+                    CommandGprop.ExecuteReader();
                 }
                 //select * from selectMD() as f(iddiario integer,fechai date,equipofk integer,minicio numeric(10,0),mfinal numeric(10,0),nviajes numeric(5,0),conductorfk integer,pasajea double precision,ineto double precision,ibruto double precision,gastosT double precision,gastosComb double precision,gastosAdmin double precision,gastosOtros double precision,gastosAhorro  double precision);
 
@@ -500,44 +429,14 @@ namespace Gerencialesv2
 
                     label1.Text = "Ingresando Movimiento Diario...";
                     label1.Refresh();
-                    OdbcCommand DbCommandFKC = DbConnectionG.CreateCommand();
-                    DbCommandFKC.CommandText = "SELECT * from temporal where id_transaccional=" + DbReaderT[2] + " and tabla_gerencial='equipo'";
-                    OdbcDataReader DbReaderG3 = DbCommandFKC.ExecuteReader();
-
-                    while (DbReaderG3.Read())
-                    {
-                        OdbcCommand DbCommandFKE = DbConnectionG.CreateCommand();
-                        DbCommandFKE.CommandText = "SELECT * from temporal where id_transaccional=" + DbReaderT[6] + " and tabla_gerencial='conductor'";
-                        OdbcDataReader DbReaderG4 = DbCommandFKE.ExecuteReader();
-
-                        while (DbReaderG4.Read())
-                        {
-
-                          //  MessageBox.Show(DbReaderT[7] + "", "esto");
-                            OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
-                           // MessageBox.Show("INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderG3[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderG4[0] + "','" + DbReaderT[7] + "','" + DbReaderT[8] + "','" + DbReaderT[9] + "','" + DbReaderT[10] + "','" + DbReaderT[11] + "','" + DbReaderT[12] + "','" + DbReaderT[13] + "','" + DbReaderT[14] + "');", "Completado");
-                            CommandGprop.CommandText = "INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro,dia,mes,yeari)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderG3[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderG4[0] + "'," + DbReaderT[7] + "," + DbReaderT[8] + "," + DbReaderT[9] + "," + DbReaderT[10] + "," + DbReaderT[11] + "," + DbReaderT[12] + "," + DbReaderT[13] + "," + DbReaderT[14] + ",'" + DbReaderT[15] + "','" + DbReaderT[16] + "','" + DbReaderT[17] + "');";
-                            CommandGprop.ExecuteReader();
-
-
-                            OdbcCommand DbCommandG2 = DbConnectionG.CreateCommand();
-                            DbCommandG2.CommandText = "SELECT MAX(id_movimiento_diario) FROM movimiento_diario;";
-                            OdbcDataReader DbReaderG2 = DbCommandG2.ExecuteReader();
-
-                            while (DbReaderG2.Read())
-                            {
-                                OdbcCommand DbCommandGTemp = DbConnectionG.CreateCommand();
-                                DbCommandGTemp.CommandText = "INSERT INTO temporal(id_gerencial,id_transaccional,tabla_gerencial)VALUES ('" + DbReaderG2[0] + "','" + DbReaderT[0] + "','movimiento_diario');";
-                                DbCommandGTemp.ExecuteReader();
-                                label1.Text = "Ingresando Movimiento Diario..";
-                                label1.Refresh();
-                            }
-                        }
-
-                    }
+                    //  MessageBox.Show(DbReaderT[7] + "", "esto");
+                    OdbcCommand CommandGprop = DbConnectionG.CreateCommand();
+                    // MessageBox.Show("INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderG3[0] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderG4[0] + "','" + DbReaderT[7] + "','" + DbReaderT[8] + "','" + DbReaderT[9] + "','" + DbReaderT[10] + "','" + DbReaderT[11] + "','" + DbReaderT[12] + "','" + DbReaderT[13] + "','" + DbReaderT[14] + "');", "Completado");
+                    CommandGprop.CommandText = "INSERT INTO movimiento_diario(id_movimiento_diario,fecha_ingreso,id_equipo,maquina_inicio,maquina_final,numro_viajes,id_conductor,pasaje_actual,ingreso_neto,ingreso_bruto,gastos_totales,gastos_combutible,gastos_administrativos,otros_gastos,ahorro,dia,mes,yeari)VALUES ('" + DbReaderT[0] + "','" + DbReaderT[1] + "','" + DbReaderT[2] + "','" + DbReaderT[3] + "','" + DbReaderT[4] + "','" + DbReaderT[5] + "','" + DbReaderT[6] + "'," + DbReaderT[7] + "," + DbReaderT[8] + "," + DbReaderT[9] + "," + DbReaderT[10] + "," + DbReaderT[11] + "," + DbReaderT[12] + "," + DbReaderT[13] + "," + DbReaderT[14] + ",'" + DbReaderT[15] + "','" + DbReaderT[16] + "','" + DbReaderT[17] + "');";
+                    CommandGprop.ExecuteReader();
                 }
 
-
+                /*
                 String etlDeposito = "select * from cuentaae";
 
                 OdbcCommand CommandTdep = DbConnectionT.CreateCommand();
@@ -566,7 +465,7 @@ namespace Gerencialesv2
                         label1.Text = "Ingresando Deposito..";
                         label1.Refresh();
                     }
-                }
+                }*/
 
 
                 /*

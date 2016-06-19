@@ -56,23 +56,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="administracion.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>administracion.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="administrador.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>administrador.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="bdgerencial.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bdgerencial.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BDGerencialDataSet.cs">
       <DependentUpon>BDGerencialDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="BDGerencialDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -83,11 +69,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BDTransacDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BDTransacDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="filtros\FiltroIngresosViajesMes.cs">
@@ -446,40 +427,7 @@
     <EmbeddedResource Include="reportes\frmcostosAdmin.resx">
       <DependentUpon>frmcostosAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="administracion.xsc">
-      <DependentUpon>administracion.xsd</DependentUpon>
-    </None>
-    <None Include="administracion.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>administracion.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="administracion.xss">
-      <DependentUpon>administracion.xsd</DependentUpon>
-    </None>
-    <None Include="administrador.xsc">
-      <DependentUpon>administrador.xsd</DependentUpon>
-    </None>
-    <None Include="administrador.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>administrador.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="administrador.xss">
-      <DependentUpon>administrador.xsd</DependentUpon>
-    </None>
     <None Include="app.config" />
-    <None Include="bdgerencial.xsc">
-      <DependentUpon>bdgerencial.xsd</DependentUpon>
-    </None>
-    <None Include="bdgerencial.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bdgerencial.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bdgerencial.xss">
-      <DependentUpon>bdgerencial.xsd</DependentUpon>
-    </None>
     <None Include="BDGerencialDataSet.xsc">
       <DependentUpon>BDGerencialDataSet.xsd</DependentUpon>
     </None>
@@ -501,17 +449,6 @@
     </None>
     <None Include="BDGerencialDataSet2.xss">
       <DependentUpon>BDGerencialDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="BDTransacDataSet.xsc">
-      <DependentUpon>BDTransacDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BDTransacDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BDTransacDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BDTransacDataSet.xss">
-      <DependentUpon>BDTransacDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
