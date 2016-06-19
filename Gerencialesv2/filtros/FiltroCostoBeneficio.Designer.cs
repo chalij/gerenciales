@@ -102,6 +102,7 @@
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
             this.Name = "FiltroCostoBeneficio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Costo Beneficio";
             this.ResumeLayout(false);
             this.PerformLayout();

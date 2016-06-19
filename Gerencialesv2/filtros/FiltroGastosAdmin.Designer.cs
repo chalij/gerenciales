@@ -102,6 +102,7 @@
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
             this.Name = "FiltroGastosAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gastos Administrativos Totales";
             this.Load += new System.EventHandler(this.FiltroIngresoNeto_Load);
             this.ResumeLayout(false);

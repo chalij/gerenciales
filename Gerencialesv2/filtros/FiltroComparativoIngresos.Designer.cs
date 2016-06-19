@@ -101,8 +101,11 @@
             this.Controls.Add(this.fechaFin);
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Name = "FiltroComparativoIngresos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comparativo de Ingresos";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FiltroGastosAdmin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

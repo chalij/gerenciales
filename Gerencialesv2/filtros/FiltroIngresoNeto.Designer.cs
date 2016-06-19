@@ -102,6 +102,7 @@
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
             this.Name = "FiltroIngresoNeto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingreso Neto";
             this.Load += new System.EventHandler(this.FiltroGastosAdmin_Load);
             this.ResumeLayout(false);

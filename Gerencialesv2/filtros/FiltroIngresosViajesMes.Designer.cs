@@ -102,6 +102,7 @@
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
             this.Name = "FiltroIngresosViajesMes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresos por Viajes";
             this.Load += new System.EventHandler(this.FiltroIngresosViajes_Load);
             this.ResumeLayout(false);

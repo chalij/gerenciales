@@ -17,6 +17,7 @@ namespace Gerencialesv2.filtros
             InitializeComponent();
             fechaIni.CustomFormat = "yyyy-MM-dd";
             fechaFin.CustomFormat = "yyyy-MM-dd";
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace Gerencialesv2.filtros
 
         private void FiltroGastosAdmin_Load(object sender, EventArgs e)
         {
-
+           
         }
 
     }

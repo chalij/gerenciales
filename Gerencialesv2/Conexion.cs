@@ -26,7 +26,7 @@ namespace Gerencialesv2
         public Conexion()
         {
             server = "Dsn=bdgerencial";
-            serverT = "Dsn=administracion";
+            serverT = "Dsn=administrador";
             DbConnection = new OdbcConnection(server);
             DbConnectionG = new OdbcConnection(server);
             DbConnectionT = new OdbcConnection(serverT);

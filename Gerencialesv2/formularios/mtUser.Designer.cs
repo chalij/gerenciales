@@ -54,13 +54,13 @@
             this.usuarioTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.tUsuarios = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ROL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.USUARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CrearB = new System.Windows.Forms.Button();
             this.EditarB = new System.Windows.Forms.Button();
             this.eliminarB = new System.Windows.Forms.Button();
             this.usuarioTableAdapter1 = new Gerencialesv2.BDGerencialDataSet2TableAdapters.usuarioTableAdapter();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ROL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.USUARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             id_usuarioLabel = new System.Windows.Forms.Label();
             id_rolLabel = new System.Windows.Forms.Label();
             usuarioLabel = new System.Windows.Forms.Label();
@@ -291,21 +291,6 @@
             this.tUsuarios.Size = new System.Drawing.Size(345, 180);
             this.tUsuarios.TabIndex = 9;
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "ID";
-            this.Id.Name = "Id";
-            // 
-            // ROL
-            // 
-            this.ROL.HeaderText = "ROL";
-            this.ROL.Name = "ROL";
-            // 
-            // USUARIO
-            // 
-            this.USUARIO.HeaderText = "USUARIO";
-            this.USUARIO.Name = "USUARIO";
-            // 
             // CrearB
             // 
             this.CrearB.Location = new System.Drawing.Point(343, 43);
@@ -339,6 +324,21 @@
             // usuarioTableAdapter1
             // 
             this.usuarioTableAdapter1.ClearBeforeFill = true;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "ID_GRUPO";
+            this.Id.Name = "Id";
+            // 
+            // ROL
+            // 
+            this.ROL.HeaderText = "ID_ROL";
+            this.ROL.Name = "ROL";
+            // 
+            // USUARIO
+            // 
+            this.USUARIO.HeaderText = "USUARIO";
+            this.USUARIO.Name = "USUARIO";
             // 
             // mtUser
             // 
@@ -396,9 +396,6 @@
         private System.Windows.Forms.TextBox usuarioTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.DataGridView tUsuarios;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ROL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn USUARIO;
         private BDGerencialDataSet2 bDGerencialDataSet2;
         private System.Windows.Forms.BindingSource rolBindingSource;
         private BDGerencialDataSet2TableAdapters.rolTableAdapter rolTableAdapter;
@@ -406,5 +403,8 @@
         private System.Windows.Forms.Button EditarB;
         private System.Windows.Forms.Button eliminarB;
         private BDGerencialDataSet2TableAdapters.usuarioTableAdapter usuarioTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ROL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn USUARIO;
     }
 }

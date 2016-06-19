@@ -11,9 +11,10 @@ using System.Collections;
 
 namespace Gerencialesv2.formularios
 {
-
+    
     public partial class mtUser : Form
     {
+        public frmPrincipal principal;
         private String server;
         private String serverT;
         private OdbcConnection DbConnection;
@@ -21,7 +22,7 @@ namespace Gerencialesv2.formularios
         public mtUser()
         {
             server = "Dsn=bdgerencial";
-            serverT = "Dsn=administracion";
+            serverT = "Dsn=administrador";
             DbConnection = new OdbcConnection(server);
             InitializeComponent();
             try

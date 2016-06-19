@@ -90,7 +90,7 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Hasta";
             // 
-            // FiltroGastosAdmin
+            // FiltroGastosCombustible
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,7 +101,8 @@
             this.Controls.Add(this.fechaFin);
             this.Controls.Add(this.fechaIni);
             this.Controls.Add(this.button1);
-            this.Name = "FiltroGastosAdmin";
+            this.Name = "FiltroGastosCombustible";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gastos de Combustible";
             this.Load += new System.EventHandler(this.FiltroIngresoNeto_Load);
             this.ResumeLayout(false);
