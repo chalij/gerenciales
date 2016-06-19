@@ -16,6 +16,9 @@ namespace Gerencialesv2.reportes
             InitializeComponent();
         }
 
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
