@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerencialesv2", "Gerencialesv2\Gerencialesv2.csproj", "{153E1D38-0203-4821-B840-9599B3ECC99D}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Caja unica", "Caja unica\Caja unica.vdproj", "{C07CF308-B5A1-47EB-85B6-4F6A475DFD1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,8 @@ Global
 		{153E1D38-0203-4821-B840-9599B3ECC99D}.Debug|x86.Build.0 = Debug|x86
 		{153E1D38-0203-4821-B840-9599B3ECC99D}.Release|x86.ActiveCfg = Release|x86
 		{153E1D38-0203-4821-B840-9599B3ECC99D}.Release|x86.Build.0 = Release|x86
+		{C07CF308-B5A1-47EB-85B6-4F6A475DFD1C}.Debug|x86.ActiveCfg = Debug
+		{C07CF308-B5A1-47EB-85B6-4F6A475DFD1C}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
