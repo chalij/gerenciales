@@ -565,6 +565,29 @@ namespace Gerencialesv2
                 return null;
             }
         }
+        public Dictionary<string, string> ListaTabla(String sql)
+        {
+            List<Item> usuarios = new List<Item>();
+            Dictionary<string, string> test = new Dictionary<string, string>();
+            try
+            {
+                DbConnection.Open();
+                OdbcCommand DbCommand = DbConnection.CreateCommand();
+                DbCommand.CommandText = sql;
+                OdbcDataReader DbReader = DbCommand.ExecuteReader();
+
+                while (DbReader.Read())
+                {
+                    test.Add(DbReader[0] + "", DbReader[1] + "");
+                }
+                DbConnection.Close();
+                return test;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
         public Boolean validarClave(String clave)
         {
             Char lmin = 'a';

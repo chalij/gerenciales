@@ -40,13 +40,15 @@ namespace Gerencialesv2
             login.Show();
             //MessageBox.Show("chali", "FormClosing Event");
         }
-        public void crearR1(DateTime fechaini, DateTime fechafin, reportes.frmcostosAdmin rpt)
+        public void crearR1(DateTime fechaini, DateTime fechafin, reportes.frmcostosAdmin rpt,int empres,String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.costosAdmin ca = new reportes.costosAdmin();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource=ca;
            // rpt.Parent = this;
            // this.Hide();
