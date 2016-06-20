@@ -67,13 +67,15 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.ShowDialog();
         }
-        public void crearR3(DateTime fechaini, DateTime fechafin, reportes.frmcostoBeneficio rpt)
+        public void crearR3(DateTime fechaini, DateTime fechafin, reportes.frmcostoBeneficio rpt,int empres,String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.costoBeneficio ca = new reportes.costoBeneficio();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
@@ -149,25 +151,29 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT5(DateTime fechaini, DateTime fechafin, reportes.frmcostosCombustible rpt)
+        public void crearRT5(DateTime fechaini, DateTime fechafin, reportes.frmcostosCombustible rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.costosCombustible ca = new reportes.costosCombustible();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT6(DateTime fechaini, DateTime fechafin, reportes.frmComparativoIngresos rpt)
+        public void crearRT6(DateTime fechaini, DateTime fechafin, reportes.frmComparativoIngresos rpt,int empres,String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.compartivoIngresoUsuario ca = new reportes.compartivoIngresoUsuario();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();

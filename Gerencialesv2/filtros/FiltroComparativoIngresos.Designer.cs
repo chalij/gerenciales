@@ -34,11 +34,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.emp = new System.Windows.Forms.ComboBox();
+            this.finitxt = new System.Windows.Forms.TextBox();
+            this.ffintxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(149, 105);
+            this.button1.Location = new System.Drawing.Point(152, 149);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -49,17 +53,17 @@
             // fechaIni
             // 
             this.fechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fechaIni.Location = new System.Drawing.Point(49, 64);
+            this.fechaIni.Location = new System.Drawing.Point(152, 64);
             this.fechaIni.Name = "fechaIni";
-            this.fechaIni.Size = new System.Drawing.Size(107, 20);
+            this.fechaIni.Size = new System.Drawing.Size(18, 20);
             this.fechaIni.TabIndex = 1;
             // 
             // fechaFin
             // 
             this.fechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.fechaFin.Location = new System.Drawing.Point(204, 64);
+            this.fechaFin.Location = new System.Drawing.Point(307, 64);
             this.fechaFin.Name = "fechaFin";
-            this.fechaFin.Size = new System.Drawing.Size(119, 20);
+            this.fechaFin.Size = new System.Drawing.Size(16, 20);
             this.fechaFin.TabIndex = 2;
             // 
             // label1
@@ -90,11 +94,49 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Hasta";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(46, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Empresario";
+            // 
+            // emp
+            // 
+            this.emp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.emp.FormattingEnabled = true;
+            this.emp.Location = new System.Drawing.Point(152, 120);
+            this.emp.Name = "emp";
+            this.emp.Size = new System.Drawing.Size(121, 21);
+            this.emp.TabIndex = 7;
+            // 
+            // finitxt
+            // 
+            this.finitxt.Enabled = false;
+            this.finitxt.Location = new System.Drawing.Point(49, 64);
+            this.finitxt.Name = "finitxt";
+            this.finitxt.Size = new System.Drawing.Size(100, 20);
+            this.finitxt.TabIndex = 8;
+            // 
+            // ffintxt
+            // 
+            this.ffintxt.Enabled = false;
+            this.ffintxt.Location = new System.Drawing.Point(204, 64);
+            this.ffintxt.Name = "ffintxt";
+            this.ffintxt.Size = new System.Drawing.Size(100, 20);
+            this.ffintxt.TabIndex = 9;
+            // 
             // FiltroComparativoIngresos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 154);
+            this.ClientSize = new System.Drawing.Size(372, 197);
+            this.Controls.Add(this.ffintxt);
+            this.Controls.Add(this.finitxt);
+            this.Controls.Add(this.emp);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -120,5 +162,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox emp;
+        private System.Windows.Forms.TextBox finitxt;
+        private System.Windows.Forms.TextBox ffintxt;
     }
 }

@@ -135,3 +135,37 @@ C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
 C:\Users\chali\Desktop\version corregida\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\bin\Debug\Gerencialesv2.exe.config
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.exe
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.pdb
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\bin\Debug\Gerencialesv2.exe
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\bin\Debug\Gerencialesv2.pdb
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csprojResolveAssemblyReference.cache
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresosViajesMes.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroComparativoIngresos.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastosCombustible.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroUsuarioViaje.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroUsuarioUnidades.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajesSF.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresosViajes.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastoViajes.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroCostoBeneficio.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroIngresoNeto.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresosTotalesViajesMes.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmComparativoIngresos.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosCombustible.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmUsuarioViaje.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmUsuarioUnidad.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmGastosTotalesViajesSF.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresosTotalesViajes.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmGastosTotalesViajes.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostoBeneficio.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmIngresoNeto.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.filtros.FiltroGastosAdmin.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.formularios.confirmETL.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.formularios.mtUser.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.frmLogin.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.frmPrincipal.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.Properties.Resources.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.reportes.frmcostosAdmin.resources
+C:\Users\chali2\Desktop\proyecto gerencials actual\gerenciales\Gerencialesv2\obj\x86\Debug\Gerencialesv2.csproj.GenerateResource.Cache
