@@ -14,18 +14,35 @@ namespace Gerencialesv2.formularios
     
     public partial class mtUser : Form
     {
+        Conexion con;
         public frmPrincipal principal;
 
         public mtUser()
         {
             InitializeComponent();
+            con = new Conexion();
         }
 
         private void usuarioBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.usuarioBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bDGerencialDataSet);
+            if (con.ifEncryp(passwordTextBox.Text))
+            {
+                this.usuarioBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.bDGerencialDataSet);
+            }
+            else
+            {
+                if (con.validarClave(passwordTextBox.Text))
+                {
+                    this.passwordTextBox.Text = con.encriptar(this.passwordTextBox.Text);
+                    this.usuarioBindingSource.EndEdit();
+                    this.tableAdapterManager.UpdateAll(this.bDGerencialDataSet);
+                    MessageBox.Show("Se guardo con exito", "Guardado");
+                }
+                else
+                    MessageBox.Show("La clave de ser como minimo de longitud de 10 caracteres, con al menos un numero, una mayuscula, y 3 minusculas","Clave debil");
+            }
 
         }
 
@@ -37,7 +54,6 @@ namespace Gerencialesv2.formularios
             this.usuarioTableAdapter.Fill(this.bDGerencialDataSet.usuario);
 
 
-            Conexion con = new Conexion();
             Dictionary<string, string> test = con.ListaUsuarios();
             rol.DataSource = new BindingSource(test, null);
             rol.DisplayMember = "Value";

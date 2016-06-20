@@ -529,6 +529,18 @@ namespace Gerencialesv2
             result = System.Text.Encoding.Unicode.GetString(decryted);
             return result;
         }
+        public Boolean ifEncryp(String cad)
+        {
+            try 
+            {
+                unCript(cad);
+                return true;
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
+        }
 
         public Dictionary<string, string> ListaUsuarios()
         {
@@ -552,6 +564,60 @@ namespace Gerencialesv2
             {
                 return null;
             }
+        }
+        public Boolean validarClave(String clave)
+        {
+            Char lmin = 'a';
+            Char num = '0';
+            Char lmay = 'A';
+            Char auxmin = 'a';
+            Char auxmax = 'a';
+            Char auxnum = 'a';
+            if (clave.Length > 10)
+            {
+                int cn = 0;
+                int cmay = 0;
+                int cmin = 0;
+                for (int h = 0; h < clave.Length; h++)
+                {
+                    for (int i = 0; i < 26; i++)
+                    {
+                        int auxamin = lmin + i;
+                        int auxamax = lmay + i;
+
+                        auxmin = (Char)auxamin;
+                        auxmax = (Char)auxamax;
+                        if (clave[h]==auxmin)
+                        {
+                            cmin++;
+                        }
+                        if (clave[h] == auxmax)
+                        {
+                            cmay++;
+                        }
+                        //  MessageBox.Show(auxmin+","+auxmax, "alf");
+                    }
+                    for (int i = 0; i < 10; i++)
+                    {
+                        int auxanum = num + i;
+                        auxnum = (Char)auxanum;
+                        if (clave[h] == auxnum)
+                        {
+                            cn++;
+                        }
+                        //MessageBox.Show(auxnum+"", "alf");
+                    }
+                }
+               // MessageBox.Show(cn+","+cmay+","+cmin+","+clave[0], "alf");
+                if (cn >= 1 && cmay >= 1 && cmin >= 3)
+                {
+                    return true;
+                }
+                else
+                    return false;
+            }
+            else
+                return false;
         }
 
 
