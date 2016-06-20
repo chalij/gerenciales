@@ -17,6 +17,12 @@ namespace Gerencialesv2.filtros
             InitializeComponent();
             fechaIni.CustomFormat = "yyyy-MM-dd";
             fechaFin.CustomFormat = "yyyy-MM-dd";
+            DateTime x = DateTime.Now;
+            int dia = x.Day;
+            int mes = x.Month;
+            int ano = x.Year;
+            ffinTxt.Text = ano + "-" + mes + "-" + dia;
+            finiTxt.Text = ano + "-" + mes + "-" + dia;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,6 +40,17 @@ namespace Gerencialesv2.filtros
         private void FiltroIngresosViajes_Load(object sender, EventArgs e)
         {
 
+        }
+        private void fechaFin_ValueChanged(object sender, EventArgs e)
+        {
+
+            ffinTxt.Text = fechaFin.Text;
+        }
+
+        private void fechaIni_ValueChanged(object sender, EventArgs e)
+        {
+
+            finiTxt.Text = fechaIni.Text;
         }
 
     }

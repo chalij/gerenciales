@@ -12,11 +12,24 @@ namespace Gerencialesv2.filtros
     public partial class FiltroIngresoNeto : Form
     {
         public frmPrincipal principal;
+        Conexion con = new Conexion();
         public FiltroIngresoNeto()
         {
             InitializeComponent();
             fechaIni.CustomFormat = "yyyy-MM-dd";
             fechaFin.CustomFormat = "yyyy-MM-dd";
+            DateTime x = DateTime.Now;
+            int dia = x.Day;
+            int mes = x.Month;
+            int ano = x.Year;
+            ffinTxt.Text = ano + "-" + mes + "-" + dia;
+            finiTxt.Text = ano + "-" + mes + "-" + dia;
+            Dictionary<string, string> test = con.ListaTabla("select id_propietario,nombre_empresario from propietario");
+            emp.DataSource = new BindingSource(test, null);
+            emp.DisplayMember = "Value";
+            emp.ValueMember = "Key";
+            string value = ((KeyValuePair<string, string>)emp.SelectedItem).Value;
+            emp.SelectedItem = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,13 +38,30 @@ namespace Gerencialesv2.filtros
             {
                 this.Hide();
                 reportes.frmIngresoNeto rpt = new reportes.frmIngresoNeto();
-                principal.crearR2(Convert.ToDateTime(fechaIni.Text), Convert.ToDateTime(fechaFin.Text), rpt);
+                string value = ((KeyValuePair<string, string>)emp.SelectedItem).Value;
+                principal.crearR2(Convert.ToDateTime(fechaIni.Text), Convert.ToDateTime(fechaFin.Text), rpt, int.Parse(emp.SelectedValue + ""), value);
             }
             else
                 MessageBox.Show("Fecha Inicio es Mayo a Fecha Final","Error");
         }
 
         private void FiltroGastosAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void fechaFin_ValueChanged(object sender, EventArgs e)
+        {
+
+            ffinTxt.Text = fechaFin.Text;
+        }
+
+        private void fechaIni_ValueChanged(object sender, EventArgs e)
+        {
+
+            finiTxt.Text = fechaIni.Text;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }

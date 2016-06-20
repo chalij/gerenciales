@@ -48,7 +48,18 @@ namespace Gerencialesv2.filtros
 
         private void FiltroGastosAdmin_Load(object sender, EventArgs e)
         {
-           
+
+        }
+        private void fechaFin_ValueChanged(object sender, EventArgs e)
+        {
+
+            ffintxt.Text = fechaFin.Text;
+        }
+
+        private void fechaIni_ValueChanged(object sender, EventArgs e)
+        {
+
+            finitxt.Text = fechaIni.Text;
         }
 
     }

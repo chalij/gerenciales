@@ -12,16 +12,24 @@ namespace Gerencialesv2.filtros
     public partial class FiltroGastoViajesSF: Form
     {
         public frmPrincipal principal;
+        Conexion con = new Conexion();
         public FiltroGastoViajesSF()
         {
             InitializeComponent();
+            Dictionary<string, string> test = con.ListaTabla("select id_propietario,nombre_empresario from propietario");
+            emp.DataSource = new BindingSource(test, null);
+            emp.DisplayMember = "Value";
+            emp.ValueMember = "Key";
+            string value = ((KeyValuePair<string, string>)emp.SelectedItem).Value;
+            emp.SelectedItem = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             reportes.frmGastosTotalesViajesSF rpt = new reportes.frmGastosTotalesViajesSF();
-            principal.crearRT2(rpt);
+            string value = ((KeyValuePair<string, string>)emp.SelectedItem).Value;
+            principal.crearRT2(rpt, int.Parse(emp.SelectedValue + ""), value);
         }
 
     }

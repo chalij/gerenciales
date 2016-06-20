@@ -55,13 +55,15 @@ namespace Gerencialesv2
             rpt.Refresh();
             rpt.Show();
         }
-        public void crearR2(DateTime fechaini, DateTime fechafin, reportes.frmIngresoNeto rpt)
+        public void crearR2(DateTime fechaini, DateTime fechafin, reportes.frmIngresoNeto rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.ingresoNeto ca = new reportes.ingresoNeto();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
@@ -81,13 +83,15 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearR4(DateTime fechaini, DateTime fechafin, reportes.frmGastosTotalesViajes rpt)
+        public void crearR4(DateTime fechaini, DateTime fechafin, reportes.frmGastosTotalesViajes rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.gastosTotalesViajes ca = new reportes.gastosTotalesViajes();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
@@ -105,47 +109,55 @@ namespace Gerencialesv2
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT1(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt)
+        public void crearRT1(DateTime fechaini, DateTime fechafin, reportes.frmIngresosTotalesViajes rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.ingresoTotalesViajes ca = new reportes.ingresoTotalesViajes();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT2(reportes.frmGastosTotalesViajesSF rpt)
+        public void crearRT2(reportes.frmGastosTotalesViajesSF rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.gastosTotalesViajesSF ca = new reportes.gastosTotalesViajesSF();
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT3(DateTime fechaini, DateTime fechafin, reportes.frmUsuarioUnidad rpt)
+        public void crearRT3(DateTime fechaini, DateTime fechafin, reportes.frmUsuarioUnidad rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.usuarioUnidad ca = new reportes.usuarioUnidad();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();
             rpt.Show();
         }
-        public void crearRT4(DateTime fechaini, DateTime fechafin, reportes.frmUsuarioViaje rpt)
+        public void crearRT4(DateTime fechaini, DateTime fechafin, reportes.frmUsuarioViaje rpt, int empres, String nempre)
         {
             //reportes.frmcostosAdmin rpt = new reportes.frmcostosAdmin();
             reportes.usuarioViaje ca = new reportes.usuarioViaje();
             ca.SetParameterValue("fechaini", fechaini);
             ca.SetParameterValue("fechafin", fechafin);
             ca.SetParameterValue("user", userName);
+            ca.SetParameterValue("empres", empres);
+            ca.SetParameterValue("nempre", nempre);
             rpt.crystalReportViewer1.ReportSource = ca;
             // rpt.Parent = this;
             // this.Hide();

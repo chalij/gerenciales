@@ -44,6 +44,17 @@ namespace Gerencialesv2.filtros
             else
                 MessageBox.Show("Fecha Inicio es Mayo a Fecha Final","Error");
         }
+        private void fechaFin_ValueChanged(object sender, EventArgs e)
+        {
+
+            ffinTxt.Text = fechaFin.Text;
+        }
+
+        private void fechaIni_ValueChanged(object sender, EventArgs e)
+        {
+
+            finiTxt.Text = fechaIni.Text;
+        }
 
     }
 }

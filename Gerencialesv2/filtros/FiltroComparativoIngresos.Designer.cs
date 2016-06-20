@@ -57,6 +57,7 @@
             this.fechaIni.Name = "fechaIni";
             this.fechaIni.Size = new System.Drawing.Size(18, 20);
             this.fechaIni.TabIndex = 1;
+            this.fechaIni.ValueChanged += new System.EventHandler(this.fechaIni_ValueChanged);
             // 
             // fechaFin
             // 
@@ -65,6 +66,7 @@
             this.fechaFin.Name = "fechaFin";
             this.fechaFin.Size = new System.Drawing.Size(16, 20);
             this.fechaFin.TabIndex = 2;
+            this.fechaFin.ValueChanged += new System.EventHandler(this.fechaFin_ValueChanged);
             // 
             // label1
             // 
