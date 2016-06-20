@@ -61,10 +61,5 @@ namespace Gerencialesv2.filtros
             finiTxt.Text = fechaIni.Text;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

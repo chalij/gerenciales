@@ -109,6 +109,7 @@
             this.fechaFin.Name = "fechaFin";
             this.fechaFin.Size = new System.Drawing.Size(18, 20);
             this.fechaFin.TabIndex = 12;
+            this.fechaFin.ValueChanged += new System.EventHandler(this.fechaFin_ValueChanged);
             // 
             // fechaIni
             // 
@@ -117,6 +118,7 @@
             this.fechaIni.Name = "fechaIni";
             this.fechaIni.Size = new System.Drawing.Size(18, 20);
             this.fechaIni.TabIndex = 11;
+            this.fechaIni.ValueChanged += new System.EventHandler(this.fechaIni_ValueChanged);
             // 
             // button1
             // 
@@ -126,6 +128,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Procesar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FiltroUsuarioViaje
             // 
